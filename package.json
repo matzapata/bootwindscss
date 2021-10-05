@@ -1,0 +1,25 @@
+{
+  "name": "tailboots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "",
+    "build:scss": "sass ./src/css/main.scss ./dist/css/main.css",
+    "build:css": "tailwindcss build -i ./src/css/main.css -o ./dist/css/tailboots.css",
+    "build:md": "sass src/css/markdown.scss dist/css/markdown.css",
+    "build": "npm run build:scss && npm run build:css && npm run build:md",
+    "clean": "rm ./dist/css/main.css && rm ./dist/css/main.css.map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.6",
+    "sass": "^1.42.1",
+    "tailwindcss": "^2.2.16"
+  }
+}
