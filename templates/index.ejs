@@ -1,0 +1,32 @@
+<html>
+
+<body>
+    <div>
+        <h1>Content</h1>
+        <% for (item of content) { %>
+            <a href="/content/<%= item.slice(0, -3) %>">
+                <div class="item">
+                    <%= item %>
+                </div>
+            </a>
+            <% } %>
+        <h1>Forms</h1>
+        <% for (item of forms) { %>
+            <a href="/forms/<%= item.slice(0, -3) %>">
+                <div class="item">
+                    <%= item %>
+                </div>
+            </a>
+            <% } %>
+        <h1>Components</h1>
+        <% for (item of components) { %>
+            <a href="/components/<%= item.slice(0, -3) %>">
+                <div class="item">
+                    <%= item %>
+                </div>
+            </a>
+            <% } %>
+
+</body>
+
+</html>

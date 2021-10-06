@@ -4,11 +4,18 @@
 
 .bd-example {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
   border-width: 1px;
   padding: 2rem;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+}
+
+html {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 hr {
@@ -37,12 +44,13 @@ hr:not([size]) {
   font-style: $headings-font-style;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
-  color: $headings-color;
+  color: #212529;
 }
 
 h1 {
   @extend %heading;
   @include font-size($h1-font-size);
+  margin-top: 25px;
 }
 
 h2 {
