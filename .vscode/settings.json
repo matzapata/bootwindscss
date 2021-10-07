@@ -1,6 +1,6 @@
 {
-    "markdown.styles": [
-        // "./dist/css/tailboots.css",
-        // "./dist/css/markdown.css",
-    ],
+  "markdown.styles": [
+    // "./dist/css/tailboots.css",
+    // "./dist/css/markdown.css",
+  ]
 }

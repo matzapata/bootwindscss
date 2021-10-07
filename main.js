@@ -1,26 +1,24 @@
+const matter = require('gray-matter');
 const express = require("express");
+const path = require("path");
+const fs = require("fs");
+const markdownit = require("markdown-it");
+
 const app = express();
 
 var bodyParser = require("body-parser");
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-const path = require("path");
-const fs = require("fs");
-
 app.set("views", path.join(__dirname, "templates"));
 app.set("view engine", "ejs");
-
-const matter = require('gray-matter');
-
 app.use(express.static("dist"));
 
-
-app.get("/:section/:article", (req, res) => {
+app.get("/docs/:section/:article", (req, res) => {
   
   const file = matter.read('./docs/content/en/' + req.params.section + '/' + req.params.article + '.md');
   
-  var md = require("markdown-it")({
+  var md = markdownit({
     html: true,
   });
   let content = file.content;
@@ -45,8 +43,6 @@ app.get("/", (req, res) => {
     forms: forms
   });
 });
-
-
 
 //add the router
 app.listen(process.env.port || 3000);

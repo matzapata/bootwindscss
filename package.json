@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "npm run build:scss && npm run build:css && node main.js",
+    "dev": "npm run build:scss && npm run build:css &&  npm run build:md && node main.js",
+    "dev:serve": "node main.js",
     "build:scss": "sass ./src/css/main.scss ./dist/css/main.css",
     "build:css": "tailwindcss build -i ./dist/css/main.css -o ./dist/css/tailboots.css",
     "build:md": "sass src/css/markdown.scss dist/css/markdown.css",
