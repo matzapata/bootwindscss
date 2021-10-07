@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "node main.js",
+    "dev": "npm run build:scss && npm run build:css && node main.js",
     "build:scss": "sass ./src/css/main.scss ./dist/css/main.css",
     "build:css": "tailwindcss build -i ./dist/css/main.css -o ./dist/css/tailboots.css",
     "build:md": "sass src/css/markdown.scss dist/css/markdown.css",
@@ -19,12 +19,12 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.3.6",
-    "express": "^4.17.1",
-    "sass": "^1.42.1",
-    "tailwindcss": "^2.2.16",
     "body-parser": "^1.19.0",
     "ejs": "^3.1.6",
+    "express": "^4.17.1",
     "gray-matter": "^4.0.3",
-    "markdown-it": "^12.2.0"
+    "markdown-it": "^12.2.0",
+    "sass": "^1.42.1",
+    "tailwindcss": "^2.2.16"
   }
 }
