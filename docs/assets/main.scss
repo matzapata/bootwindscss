@@ -1,0 +1,12 @@
+// @import "../../dist/css/tailboots.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    @import "../../src/css/bootstrap/bootstrap.scss";
+    @import "../../dist/css/markdown.css";
+}
+
+
