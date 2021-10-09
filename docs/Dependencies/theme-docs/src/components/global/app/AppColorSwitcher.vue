@@ -1,7 +1,8 @@
 <template>
-  <span class="inline-flex">
+<div>
+  <!-- <span class="inline-flex">
     <button
-      class="rounded-md hover:text-primary-500 focus:outline-none transition ease-in-out duration-150"
+      class="transition duration-150 ease-in-out rounded-md hover:text-primary-500 focus:outline-none"
       aria-label="Color Mode"
       @click="$colorMode.value === 'dark' ? $colorMode.preference = 'light' : $colorMode.preference = 'dark'"
     >
@@ -10,5 +11,6 @@
         <IconMoon v-else class="w-6 h-6" />
       </client-only>
     </button>
-  </span>
+  </span> -->
+</div>
 </template>
