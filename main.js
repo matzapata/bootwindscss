@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.set("views", path.join(__dirname, "templates"));
 app.set("view engine", "ejs");
-app.use(express.static("dist"));
+app.use(express.static("devAssets"));
 
 app.get("/docs/:section/:article", (req, res) => {
   

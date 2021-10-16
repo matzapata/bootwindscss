@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 @layer components {
-    @import "../../src/css/bootstrap/bootstrap.scss";
-    @import "../../src/css/markdown.scss";
+    @import "../../src/scss/all.scss";
+    @import "../../src/scss/markdown.scss";
 }
 
 

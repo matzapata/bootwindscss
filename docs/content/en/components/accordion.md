@@ -5,6 +5,11 @@ position: 13
 category: Components
 ---
 
+# How it works
+
+The accordion uses collapse internally to make it collapsible. To render an accordion that’s expanded, add the `.open` class on the `.accordion.`
+
+
 # Example
 
 <div class="bd-example">
@@ -163,6 +168,8 @@ category: Components
 
 ## Flush
 
+Add `.accordion-flush` to remove the default background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent container.
+
 <div class="bd-example bg-light">
   <div class="accordion accordion-flush" id="accordionFlushExample">
     <div class="accordion-item">
@@ -301,6 +308,8 @@ category: Components
 ```
 
 ## Always open
+
+Omit the `data-bs-parent` attribute on each `.accordion-collapse` to make accordion items stay open when another item is opened.
 
 <div class="bd-example">
   <div class="accordion" id="accordionPanelsStayOpenExample">

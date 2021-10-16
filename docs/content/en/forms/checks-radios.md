@@ -6,7 +6,7 @@ category: Forms
 features:
 ---
 
-## Checks
+# Checks
 
 <div class="bd-example">
   <div class="form-check">
@@ -49,32 +49,9 @@ features:
 </div>
 ```
 
-## Indeterminate
-
-<div class="bd-example bd-example-indeterminate">
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-    <label class="form-check-label" for="flexCheckIndeterminate">
-      Indeterminate checkbox
-    </label>
-  </div>
-</div>
-
-```html
-<div class="form-check">
-  <input
-    class="form-check-input"
-    type="checkbox"
-    value=""
-    id="flexCheckIndeterminate"
-  />
-  <label class="form-check-label" for="flexCheckIndeterminate">
-    Indeterminate checkbox
-  </label>
-</div>
-```
-
 ## Disabled
+
+Add the `disabled` attribute and the associated `<label>`s are automatically styled to match with a lighter color to help indicate the input’s state.
 
 <div class="bd-example">
   <div class="form-check">
@@ -119,7 +96,7 @@ features:
 </div>
 ```
 
-## Radios
+# Radios
 
 <div class="bd-example">
   <div class="form-check">
@@ -163,6 +140,8 @@ features:
 ```
 
 ## Disabled
+
+Add the `disabled` attribute and the associated `<label>`s are automatically styled to match with a lighter color to help indicate the input’s state.
 
 <div class="bd-example">
   <div class="form-check">
@@ -208,7 +187,9 @@ features:
 </div>
 ```
 
-## Switches
+# Switches
+
+A switch has the markup of a custom checkbox but uses the `.form-switch` class to render a toggle switch. Switches also support the `disabled` attribute.
 
 <div class="bd-example">
   <div class="form-check form-switch">
@@ -280,7 +261,9 @@ features:
 </div>
 ```
 
-## Default (stacked)
+# Default (stacked)
+
+By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with `.form-check`.
 
 <div class="bd-example">
   <div class="form-check">
@@ -374,7 +357,9 @@ features:
 </div>
 ```
 
-## Inline
+# Inline
+
+Group checkboxes or radios on the same horizontal row by adding `.form-check-inline` to any `.form-check`.
 
 <div class="bd-example">
   <div class="form-check form-check-inline">
@@ -471,14 +456,16 @@ features:
 </div>
 ```
 
-## Without labels
+# Without labels
+
+Omit the wrapping `.form-check` for checkboxes and radios that have no label text.
 
 <div class="bd-example">
-  <div>
-    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="">
   </div>
-  <div>
-    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="">
   </div>
 </div>
 
@@ -487,39 +474,36 @@ features:
   <input
     class="form-check-input"
     type="checkbox"
-    id="checkboxNoLabel"
     value=""
-    aria-label="..."
   />
 </div>
 <div>
   <input
     class="form-check-input"
     type="radio"
-    name="radioNoLabel"
-    id="radioNoLabel1"
     value=""
-    aria-label="..."
   />
 </div>
 ```
 
-## Toggle buttons
+# Toggle buttons
+
+Create button-like checkboxes and radio buttons by using `.btn` styles rather than `.form-check-label` on the `<label>` elements. 
 
 ## Checkbox toggle buttons
 
 <div class="bd-example">
-  <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+  <input type="checkbox" class="btn-check" autocomplete="off">
   <label class="btn btn-primary" for="btn-check">Single toggle</label>
 </div>
 
 ```html
-<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" />
+<input type="checkbox" class="btn-check" autocomplete="off" />
 <label class="btn btn-primary" for="btn-check">Single toggle</label>
 ```
 
 <div class="bd-example">
-  <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+  <input type="checkbox" class="btn-check"checked autocomplete="off">
   <label class="btn btn-primary" for="btn-check-2">Checked</label>
 </div>
 
@@ -605,15 +589,21 @@ features:
 
 ## Outlined styles
 
-<div class="bd-example">
-  <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
-  <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
-  <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
-  <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
-  <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
-  <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-  <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+<div class="space-y-2 bd-example">
+  <div>
+    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
+  </div>
+  <div>
+    <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+    <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+  </div>
+  <div>
+    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+    <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+    <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+  </div>
 </div>
 
 ```html

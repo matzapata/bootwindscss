@@ -1,0 +1,120 @@
+.nuxt-content > .bd-example {
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+  border-width: 1px;
+  padding: 2rem;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.nuxt-content > html {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.nuxt-content > hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+.nuxt-content > hr:not([size]) {
+  height: 1px;
+}
+.nuxt-content > h6, .nuxt-content > h5, .nuxt-content > h4, .nuxt-content > h3, .nuxt-content > h2, .nuxt-content > h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.nuxt-content > h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  margin-top: 25px;
+}
+@media (min-width: 1200px) {
+  .nuxt-content > h1 {
+    font-size: 2.5rem;
+  }
+}
+.nuxt-content > h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .nuxt-content > h2 {
+    font-size: 2rem;
+  }
+}
+.nuxt-content > h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  .nuxt-content > h3 {
+    font-size: 1.75rem;
+  }
+}
+.nuxt-content > h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  .nuxt-content > h4 {
+    font-size: 1.5rem;
+  }
+}
+.nuxt-content > h5 {
+  font-size: 1.25rem;
+}
+.nuxt-content > h6 {
+  font-size: 1rem;
+}
+.nuxt-content > p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.nuxt-content > ol,
+.nuxt-content > ul {
+  padding-left: 2rem;
+}
+.nuxt-content > ol,
+.nuxt-content > ul,
+.nuxt-content > dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.nuxt-content > ol ol,
+.nuxt-content > ul ul,
+.nuxt-content > ol ul,
+.nuxt-content > ul ol {
+  margin-bottom: 0;
+}
+.nuxt-content > ul {
+  list-style-type: disc;
+}
+.nuxt-content > b,
+.nuxt-content > strong {
+  font-weight: bolder;
+}
+.nuxt-content > small {
+  font-size: 0.875em;
+}
+.nuxt-content > pre[class*=language-] {
+  margin-top: 0px;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.nuxt-content > .nuxt-content-highlight > pre[class*=language-] {
+  margin-top: 0px;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.nuxt-content p code, .nuxt-content li code {
+  color: #d63384;
+}
+.nuxt-content p a, .nuxt-content li a {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+.nuxt-content p a:hover, .nuxt-content li a:hover {
+  color: #0a58ca;
+}
+
+/*# sourceMappingURL=markdown.css.map */

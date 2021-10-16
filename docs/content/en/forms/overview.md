@@ -7,8 +7,10 @@ category: "Forms"
 
 # Overview
 
+Here’s a quick example to demonstrate form styles.
+
 <div class="bd-example">
-  <form>
+  <form onsubmit="return false">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -52,7 +54,9 @@ category: "Forms"
 </form>
 ```
 
-## Form text
+# Form text
+
+Use `form-text` to style text below inputs.
 
 <div class="bd-example">
   <label for="inputPassword5" class="form-label">Password</label>
@@ -77,12 +81,26 @@ category: "Forms"
 </div>
 ```
 
-## Disabled forms
+# Disabled forms
+
+Add the `disabled` boolean attribute on an input to prevent user interactions and make it appear lighter.
+
+<div class="bd-example">
+  <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+</div>
+
+```html
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+```
+
+Add the `disabled` attribute to a `<fieldset>` to disable all the controls within. Browsers treat all native form controls (`<input>`, `<select>`, and `<button>` elements) inside a `<fieldset disabled>` as disabled, preventing both keyboard and mouse interactions on them.
+
+However, if your form also includes custom button-like elements such as `<a class="btn btn-*">...</a>`, these will only be given a style of `pointer-events: none`, meaning they are still focusable and operable using the keyboard. In this case, you must manually modify these controls by adding `tabindex="-1"` to prevent them from receiving focus and `aria-disabled="disabled"` to signal their state to assistive technologies.
 
 <div class="bd-example">
   <form>
     <fieldset disabled>
-      <legend>Disabled fieldset example</legend>
+      <legend class="legend">Disabled fieldset example</legend>
       <div class="mb-3">
         <label for="disabledTextInput" class="form-label">Disabled input</label>
         <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
@@ -109,7 +127,7 @@ category: "Forms"
 ```html
 <form>
   <fieldset disabled>
-    <legend>Disabled fieldset example</legend>
+    <legend class="legend">Disabled fieldset example</legend>
     <div class="mb-3">
       <label for="disabledTextInput" class="form-label">Disabled input</label>
       <input

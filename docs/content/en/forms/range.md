@@ -7,6 +7,8 @@ category: Forms
 
 # Overview
 
+Example of usage of `<input type="range">` combined with `form-range` class.
+
 <div class="bd-example">
         <label for="customRange1" class="form-label">Example range</label>
         <input type="range" class="form-range" id="customRange1">
@@ -18,6 +20,8 @@ category: Forms
 ```
 
 # Disabled
+
+Add the `disabled` boolean attribute on an input to give it a grayed out appearance and remove pointer events.
 
 <div class="bd-example">
         <label for="disabledRange" class="form-label">Disabled range</label>
@@ -31,6 +35,8 @@ category: Forms
 
 # Min and max
 
+Rewrite the min and max values with  `min=""` and `max=""`. 
+
 <div class="bd-example">
         <label for="customRange2" class="form-label">Example range</label>
         <input type="range" class="form-range" min="0" max="5" id="customRange2">
@@ -42,6 +48,8 @@ category: Forms
 ```
 
 # Steps
+
+Set a custom step with `step=""`
 
 <div class="bd-example">
         <label for="customRange3" class="form-label">Example range</label>

@@ -125,32 +125,6 @@ category: Components
 >
 ```
 
-## Link functionality caveat
-
-<div class="bd-example">
-  <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-  <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
-</div>
-
-```html
-<a
-  href="#"
-  class="btn btn-primary btn-lg disabled"
-  tabindex="-1"
-  role="button"
-  aria-disabled="true"
-  >Primary link</a
->
-<a
-  href="#"
-  class="btn btn-secondary btn-lg disabled"
-  tabindex="-1"
-  role="button"
-  aria-disabled="true"
-  >Link</a
->
-```
-
 # Block buttons
 
 <div class="space-y-2 bd-example">

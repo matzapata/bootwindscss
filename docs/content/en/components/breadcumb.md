@@ -55,6 +55,8 @@ Remember to add the `a` class for links in case you want them to look like that,
 
 # Dividers
 
+For further reference on customizacion reach bootstrap docs. 
+
 <div class="bd-example">
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
