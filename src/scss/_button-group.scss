@@ -22,17 +22,6 @@
   }
 }
 
-// Optional: Group multiple button groups together for a toolbar
-.btn-toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-
-  .input-group {
-    width: auto;
-  }
-}
-
 .btn-group {
   // Prevent double borders when buttons are next to each other
   > .btn:not(:first-child),
