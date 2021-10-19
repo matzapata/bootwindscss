@@ -133,12 +133,16 @@
   }
 
   pre[class*="language-"] {
+    border-radius: 0.5rem;
+  }
+
+  .bd-example + pre[class*="language-"] {
     margin-top: 0px;
     border-radius: 0 0 0.5rem 0.5rem;
   }
 
-  .nuxt-content-highlight > {
-    pre[class*="language-"] {
+  .nuxt-content-highlight {
+    .bd-example + pre[class*="language-"] {
       margin-top: 0px;
       border-radius: 0 0 0.5rem 0.5rem;
     }
