@@ -5,9 +5,9 @@ position: 24
 category: Components
 ---
 
-# How it works
+## How it works
 
-# Supported content
+## Supported content
 
 <div class="bd-example">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -100,7 +100,7 @@ category: Components
 </nav>
 ```
 
-## Brand
+### Brand
 
 <h4 id="text">Text</h4>
 
@@ -135,7 +135,7 @@ category: Components
 </nav>
 ```
 
-### Image
+#### Image
 
 <div class="bd-example">
   <nav class="px-2 navbar navbar-light bg-light">
@@ -153,7 +153,7 @@ category: Components
 </nav>
 ```
 
-### Image and text
+#### Image and text
 
 <div class="bd-example">
   <nav class="navbar navbar-light bg-light">
@@ -175,7 +175,7 @@ category: Components
 </div>
 ```
 
-## Nav
+### Nav
 
 <div class="bd-example">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -302,10 +302,10 @@ And because we use classes for our navs, you can avoid the list-based approach e
 
 You can also use dropdowns in your navbar. Dropdown menus require a wrapping element for positioning, so be sure to use separate and nested elements for .nav-item and .nav-link as shown below.
 
-# CONTINUAR DESDE ACA
-# CONTINUAR DESDE ACA
-# CONTINUAR DESDE ACA
-# CONTINUAR DESDE ACA
+## CONTINUAR DESDE ACA
+## CONTINUAR DESDE ACA
+## CONTINUAR DESDE ACA
+## CONTINUAR DESDE ACA
 
 <div class="bd-example">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -385,7 +385,7 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
 </nav>
 ```
 
-## Forms
+### Forms
 
 <div class="bd-example">
   <nav class="navbar navbar-light bg-light">
@@ -478,7 +478,7 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
 </nav>
 ```
 
-## Text
+### Text
 
 <div class="bd-example">
   <nav class="navbar navbar-light bg-light">
@@ -559,7 +559,7 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
 </nav>
 ```
 
-# Color schemes
+## Color schemes
 
 <div class="bd-example">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -665,7 +665,7 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
 </nav>
 ```
 
-# Containers
+## Containers
 
 <div class="bd-example">
   <div class="container">
@@ -703,7 +703,7 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
 </nav>
 ```
 
-# Placement
+## Placement
 
 <div class="bd-example">
   <nav class="navbar navbar-light bg-light">
@@ -769,7 +769,7 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
 </nav>
 ```
 
-# Scrolling
+## Scrolling
 
 <div class="bd-example">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -863,9 +863,9 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
 </nav>
 ```
 
-# Responsive behaviors
+## Responsive behaviors
 
-## Toggler
+### Toggler
 
 <div class="bd-example">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -1062,7 +1062,7 @@ You can also use dropdowns in your navbar. Dropdown menus require a wrapping ele
 </nav>
 ```
 
-## External content
+### External content
 
 <div class="bd-example">
   <div class="collapse" id="navbarToggleExternalContent">

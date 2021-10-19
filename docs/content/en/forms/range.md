@@ -5,7 +5,13 @@ position: 10
 category: Forms
 ---
 
-# Overview
+## Available classes
+
+```css
+.form-range { /* Base class applied on input  */ }
+```
+
+## Examples
 
 Example of usage of `<input type="range">` combined with `form-range` class.
 
@@ -19,7 +25,7 @@ Example of usage of `<input type="range">` combined with `form-range` class.
 <input type="range" class="form-range" id="customRange1" />
 ```
 
-# Disabled
+## Disabled
 
 Add the `disabled` boolean attribute on an input to give it a grayed out appearance and remove pointer events.
 
@@ -33,7 +39,7 @@ Add the `disabled` boolean attribute on an input to give it a grayed out appeara
 <input type="range" class="form-range" id="disabledRange" disabled />
 ```
 
-# Min and max
+## Min and max
 
 Rewrite the min and max values with  `min=""` and `max=""`. 
 
@@ -47,7 +53,7 @@ Rewrite the min and max values with  `min=""` and `max=""`.
 <input type="range" class="form-range" min="0" max="5" id="customRange2" />
 ```
 
-# Steps
+## Steps
 
 Set a custom step with `step=""`
 

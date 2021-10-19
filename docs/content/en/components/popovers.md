@@ -5,13 +5,13 @@ position: 27
 category: Components
 ---
 
-# Overview
+## Overview
 
-# FIX: Enable popovers everywhere
-# Example: Enable popovers everywhere
-# Example: Enable popovers everywhere
+## FIX: Enable popovers everywhere
+## Example: Enable popovers everywhere
+## Example: Enable popovers everywhere
 
-# Example
+## Example
 
 <div class="bd-example">
   <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
@@ -30,7 +30,7 @@ category: Components
 </button>
 ```
 
-## Four directions
+### Four directions
 
 <div class="flex flex-wrap gap-2 bd-example">
   <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
@@ -94,7 +94,7 @@ category: Components
 </button>
 ```
 
-## Dismiss on next click
+### Dismiss on next click
 
 <div class="bd-example">
   <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus"
@@ -115,7 +115,7 @@ category: Components
 >
 ```
 
-## Disabled elements
+### Disabled elements
 
 <div class="bd-example">
   <span class="inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"

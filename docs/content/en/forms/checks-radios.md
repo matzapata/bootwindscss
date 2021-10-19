@@ -6,7 +6,18 @@ category: Forms
 features:
 ---
 
-# Checks
+## Available classes 
+
+```css
+.form-check { /* Base component wrapper */ } 
+.form-check-input { /* Check input */ } 
+.form-check-label { /* Label for check input */ } 
+.form-check-inline { /* Group checks in the same row */ } 
+.form-switch { /* Switch component */ } 
+.btn-check { /* Make btn behave like checkbox and or radio */ } 
+```
+
+## Checks
 
 <div class="bd-example">
   <div class="form-check">
@@ -49,7 +60,7 @@ features:
 </div>
 ```
 
-## Disabled
+### Disabled
 
 Add the `disabled` attribute and the associated `<label>`s are automatically styled to match with a lighter color to help indicate the input’s state.
 
@@ -96,7 +107,7 @@ Add the `disabled` attribute and the associated `<label>`s are automatically sty
 </div>
 ```
 
-# Radios
+## Radios
 
 <div class="bd-example">
   <div class="form-check">
@@ -139,7 +150,7 @@ Add the `disabled` attribute and the associated `<label>`s are automatically sty
 </div>
 ```
 
-## Disabled
+### Disabled
 
 Add the `disabled` attribute and the associated `<label>`s are automatically styled to match with a lighter color to help indicate the input’s state.
 
@@ -187,7 +198,7 @@ Add the `disabled` attribute and the associated `<label>`s are automatically sty
 </div>
 ```
 
-# Switches
+## Switches
 
 A switch has the markup of a custom checkbox but uses the `.form-switch` class to render a toggle switch. Switches also support the `disabled` attribute.
 
@@ -261,7 +272,7 @@ A switch has the markup of a custom checkbox but uses the `.form-switch` class t
 </div>
 ```
 
-# Default (stacked)
+## Default (stacked)
 
 By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with `.form-check`.
 
@@ -357,7 +368,7 @@ By default, any number of checkboxes and radios that are immediate sibling will 
 </div>
 ```
 
-# Inline
+## Inline
 
 Group checkboxes or radios on the same horizontal row by adding `.form-check-inline` to any `.form-check`.
 
@@ -456,7 +467,7 @@ Group checkboxes or radios on the same horizontal row by adding `.form-check-inl
 </div>
 ```
 
-# Without labels
+## Without labels
 
 Omit the wrapping `.form-check` for checkboxes and radios that have no label text.
 
@@ -486,11 +497,11 @@ Omit the wrapping `.form-check` for checkboxes and radios that have no label tex
 </div>
 ```
 
-# Toggle buttons
+## Toggle buttons
 
 Create button-like checkboxes and radio buttons by using `.btn` styles rather than `.form-check-label` on the `<label>` elements. 
 
-## Checkbox toggle buttons
+### Checkbox toggle buttons
 
 <div class="bd-example">
   <input type="checkbox" class="btn-check" autocomplete="off">
@@ -534,7 +545,7 @@ Create button-like checkboxes and radio buttons by using `.btn` styles rather th
 <label class="btn btn-primary" for="btn-check-3">Disabled</label>
 ```
 
-## Radio toggle buttons
+### Radio toggle buttons
 
 <div class="bd-example">
   <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
@@ -587,7 +598,7 @@ Create button-like checkboxes and radio buttons by using `.btn` styles rather th
 <label class="btn btn-secondary" for="option4">Radio</label>
 ```
 
-## Outlined styles
+### Outlined styles
 
 <div class="space-y-2 bd-example">
   <div>

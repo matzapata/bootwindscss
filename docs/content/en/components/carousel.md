@@ -5,9 +5,25 @@ position: 17
 category: Components
 ---
 
-# How it works
+## Available classes
 
-# Example
+```css
+.carousel { /*  */ }
+.carousel.slide { /* Semantic only */ }
+.carousel.carousel-fade { /* Fade transition */ }
+.carousel.carousel-dark { /*  */ }
+.carousel-inner { /*  */ }
+.carousel-item { /*  */ }
+.carousel-item.active { /*  */ }
+.carousel-control-next { /* */ }
+.carousel-control-next-icon { /* */ }
+.carousel-control-prev { /* */ }
+.carousel-control-prev-icon { /* */ }
+.carousel-indicators { /*  */ }
+.carousel-caption { /*  */ }
+```
+
+## Example
 
 <div class="bd-example">
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -51,7 +67,7 @@ category: Components
 </div>
 ```
 
-## With controls
+### With controls
 
 <div class="bd-example">
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -121,7 +137,7 @@ category: Components
 </div>
 ```
 
-## With indicators
+### With indicators
 
 <div class="bd-example">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -223,7 +239,7 @@ category: Components
 </div>
 ```
 
-## With captions
+### With captions
 
 In this example we hide the captions by default for small screens and make them visible for medium to larger screens with the `hidden` and `md:block` tailwind utilities
 
@@ -349,7 +365,7 @@ In this example we hide the captions by default for small screens and make them 
 </div>
 ```
 
-## Crossfade
+### Crossfade
 
 <div class="bd-example">
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -419,7 +435,7 @@ In this example we hide the captions by default for small screens and make them 
 </div>
 ```
 
-## Individual <code>.carousel-item</code> interval</h3>
+### Individual <code>.carousel-item</code> interval</h3>
 
 <div class="bd-example">
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -489,7 +505,7 @@ In this example we hide the captions by default for small screens and make them 
 </div>
 ```
 
-## Disable touch swiping
+### Disable touch swiping
 
 <div class="bd-example">
   <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
@@ -562,7 +578,7 @@ In this example we hide the captions by default for small screens and make them 
 </div>
 ```
 
-# Dark variant
+## Dark variant
 
 <div class="bd-example">
   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">

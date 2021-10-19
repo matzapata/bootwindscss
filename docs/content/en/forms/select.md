@@ -5,7 +5,15 @@ position: 11
 category: Forms
 ---
 
-# Basic example
+## Available classes
+
+```css
+.form-select { /* Basic component class */ }
+.form-select-sm { /* Small variant */ }
+.form-select-lg { /* Large variant */ }
+```
+
+## Basic example
 
 A simple example using the `form-select` class
 
@@ -27,7 +35,7 @@ A simple example using the `form-select` class
 </select>
 ```
 
-# Sizing
+## Sizing
 
 Make large and small selects with `form-select-lg` and `form-select-sm` classes in addition of the common `form-select`.
 
@@ -105,7 +113,7 @@ Use the `size` attribute to determine the max amount of rows visible
 </select>
 ```
 
-# Disabled
+## Disabled
 
 Disable a select using the `disabled` boolean attribute.
 

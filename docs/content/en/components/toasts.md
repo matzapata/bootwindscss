@@ -7,7 +7,7 @@ category: Components
 
 <!-- TODO FIX TOASTS (ADD JS) -->
 
-## Basic
+### Basic
 
 <div class="bd-example">
   <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
@@ -41,7 +41,7 @@ category: Components
   </div>
 ```
 
-## Live example
+### Live example
 
 <!-- TODO FIX TOASTS (Add javascript) -->
 <div class="bd-example">
@@ -67,7 +67,7 @@ category: Components
 
 ```
 
-## Stacking
+### Stacking
 
 <div class="bd-example">
   <div class="toast-container">
@@ -111,7 +111,7 @@ category: Components
   </div>
 ```
 
-## Custom content
+### Custom content
 
 <div class="bd-example bg-light">
   <div class="items-center toast show" role="alert" aria-live="assertive" aria-atomic="true">
@@ -173,7 +173,7 @@ category: Components
 </div>
 ```
 
-## Color schemes
+### Color schemes
 
 <div class="bd-example bg-light">
   <div class="items-center text-white border-0 show toast bg-primary" role="alert" aria-live="assertive"
@@ -207,7 +207,7 @@ category: Components
 </div>
 ```
 
-# Placement
+## Placement
 
 <div class="bd-example">
   <form>
@@ -387,7 +387,7 @@ category: Components
 </div>
 ```
 
-# Accessibility
+## Accessibility
 
 <div class="bd-example bg-light">
   <div role="alert" aria-live="assertive" aria-atomic="true" class="toast show" data-bs-autohide="false">

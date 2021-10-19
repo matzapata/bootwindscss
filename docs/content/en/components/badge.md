@@ -5,11 +5,17 @@ position: 15
 category: Components
 ---
 
-# Basic examples
+## Available classes
+
+```css
+.badge { /* Base class */ }
+```
+
+## Basic examples
 
 Badges scale to match the size of the immediate parent element by using relative font sizing and em units.
 
-## Headings
+### Headings
 
 <div class="bd-example">
   <h1 class="h1">Example heading <span class="bg-green-500 badge">New</span></h1>
@@ -29,7 +35,7 @@ Badges scale to match the size of the immediate parent element by using relative
 <h6 class="h6">Example heading <span class="bg-green-500 badge">New</span></h6>
 ```
 
-## Buttons possitioned
+### Buttons possitioned
 
 Badges are styles span so use them as whished wherever you see fit. Here are some examples with buttons. Position them as usual with tailwind utilities
 
@@ -61,7 +67,7 @@ Badges are styles span so use them as whished wherever you see fit. Here are som
 </button>
 ```
 
-# Background colors
+## Background colors
 
 Here we are using tailwindcss for changing the colors so you can use not just the theme colors but anyone you want. Remember that the theme colors are included with the preset.
 
@@ -87,7 +93,7 @@ Here we are using tailwindcss for changing the colors so you can use not just th
 <span class="badge bg-dark">Dark</span>
 ```
 
-# Pill badges
+## Pill badges
 
 To make them rounded just use the `rounded-full` tailwind utility.
 

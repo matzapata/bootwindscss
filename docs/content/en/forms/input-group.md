@@ -5,7 +5,16 @@ position: 9
 category: Forms
 ---
 
-# Basic example
+## Available classes
+
+```css
+.input-group { /* Base styles */ }
+.input-group-sm { /* Small variant applied to content within  */ }
+.input-group-lg { /* Large variant applied to content within */ }
+.input-group-text { /* Text addon */ }
+```
+
+## Basic example
 
 Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place `<label>`s outside the input group.
 
@@ -109,7 +118,7 @@ Place one add-on or button on either side of an input. You may also place one on
 </div>
 ```
 
-# Wrapping
+## Wrapping
 
 Input groups wrap by default via `flex-wrap: wrap` in order to accommodate custom form field validation within an input group. You may disable this with tailwind `flex-nowrap`.
 
@@ -134,7 +143,7 @@ Input groups wrap by default via `flex-wrap: wrap` in order to accommodate custo
 </div>
 ```
 
-# Sizing
+## Sizing
 
 Add the relative form sizing classes to the `.input-group` itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
 
@@ -188,7 +197,7 @@ Sizing on the individual input group elements isn’t supported.
 </div>
 ```
 
-# Checkboxes and radios
+## Checkboxes and radios
 
 Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding .`mt-0` to the `.form-check-input` when there’s no visible text next to the input.
 
@@ -241,7 +250,7 @@ Place any checkbox or radio option within an input group’s addon instead of te
 </div>
 ```
 
-# Multiple inputs
+## Multiple inputs
 
 While multiple `<input>`s are supported visually, validation styles are only available for input groups with a single `<input>`.
 
@@ -261,7 +270,7 @@ While multiple `<input>`s are supported visually, validation styles are only ava
 </div>
 ```
 
-# Multiple addons
+## Multiple addons
 
 Multiple add-ons are supported and can be mixed with checkbox and radio input versions.
 
@@ -300,7 +309,7 @@ Multiple add-ons are supported and can be mixed with checkbox and radio input ve
 </div>
 ```
 
-# Button addons
+## Button addons
 
 <div class="bd-example">
   <div class="mb-3 input-group">
@@ -376,7 +385,7 @@ Multiple add-ons are supported and can be mixed with checkbox and radio input ve
 </div>
 ```
 
-# Buttons with dropdowns
+## Buttons with dropdowns
 
 <div class="bd-example">
   <div class="mb-3 input-group">
@@ -528,7 +537,7 @@ Multiple add-ons are supported and can be mixed with checkbox and radio input ve
 </div>
 ```
 
-# Segmented buttons
+## Segmented buttons
 
 <div class="bd-example">
   <div class="mb-3 input-group">
@@ -621,11 +630,11 @@ Multiple add-ons are supported and can be mixed with checkbox and radio input ve
 </div>
 ```
 
-# Custom forms
+## Custom forms
 
 Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.
 
-## Custom select
+### Custom select
 
 <div class="bd-example">
   <div class="mb-3 input-group">
@@ -716,7 +725,7 @@ Input groups include support for custom selects and custom file inputs. Browser 
 </div>
 ```
 
-## Custom file input
+### Custom file input
 
 <div class="bd-example">
   <div class="mb-3 input-group">

@@ -5,7 +5,7 @@ position: 5
 category: "Forms"
 ---
 
-# Overview
+## Overview
 
 Here’s a quick example to demonstrate form styles.
 
@@ -54,7 +54,7 @@ Here’s a quick example to demonstrate form styles.
 </form>
 ```
 
-# Form text
+## Form text
 
 Use `form-text` to style text below inputs.
 
@@ -81,7 +81,7 @@ Use `form-text` to style text below inputs.
 </div>
 ```
 
-# Disabled forms
+## Disabled forms
 
 Add the `disabled` boolean attribute on an input to prevent user interactions and make it appear lighter.
 

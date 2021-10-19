@@ -5,7 +5,13 @@ position: 7
 category: Forms
 ---
 
-# Example
+## Available classes
+
+```css
+.form-floating { /* Wrapper that encompasses input and label */ }
+```
+
+## Example
 
 Wrap a pair of `<input class="form-control">` and `<label>` elements in `.form-floating` to enable floating labels with Bootstrap’s textual form fields. A placeholder is required on each `<input>` as our method of CSS-only floating labels uses the `:placeholder-shown` pseudo-element. Also note that the `<input>` must come first so we can utilize a sibling selector (e.g., `~`).
 
@@ -83,7 +89,7 @@ Wrap a pair of `<input class="form-control">` and `<label>` elements in `.form-f
 </form>
 ```
 
-# Textareas
+## Textareas
 
 <div class="bd-example">
   <div class="form-floating">
@@ -123,7 +129,7 @@ Wrap a pair of `<input class="form-control">` and `<label>` elements in `.form-f
 </div>
 ```
 
-# Selects
+## Selects
 
 <div class="bd-example">
   <div class="form-floating">

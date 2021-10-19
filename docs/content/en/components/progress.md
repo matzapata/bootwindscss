@@ -5,7 +5,7 @@ position: 28
 category: Components
 ---
 
-# How it works
+## How it works
 
 <div class="space-y-2 bd-example">
   <div class="progress">
@@ -81,7 +81,7 @@ category: Components
 </div>
 ```
 
-# Labels
+## Labels
 
 <div class="bd-example">
   <div class="progress">
@@ -105,7 +105,7 @@ category: Components
 </div>
 ```
 
-# Height
+## Height
 
 <div class="bd-example">
   <div class="progress" style="height: 1px;">
@@ -141,7 +141,7 @@ category: Components
 </div>
 ```
 
-# Backgrounds
+## Backgrounds
 
 <div class="space-y-2 bd-example">
   <div class="progress">
@@ -205,7 +205,7 @@ category: Components
 </div>
 ```
 
-# Multiple bars
+## Multiple bars
 
 <div class="bd-example">
   <div class="progress">
@@ -247,7 +247,7 @@ category: Components
 </div>
 ```
 
-# Striped
+## Striped
 
 <div class="space-y-2 bd-example">
   <div class="progress">
@@ -325,7 +325,7 @@ category: Components
 </div>
 ```
 
-# Animated stripes
+## Animated stripes
 
 <div class="bd-example">
   <div class="progress">

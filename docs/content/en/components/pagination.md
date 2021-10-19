@@ -5,7 +5,7 @@ position: 26
 category: Components
 ---
 
-# Overview
+## Overview
 
 <div class="bd-example">
   <nav aria-label="Page navigation example">
@@ -31,7 +31,7 @@ category: Components
 </nav>
 ```
 
-# Working with icons
+## Working with icons
 
 <div class="bd-example">
   <nav aria-label="Page navigation example">
@@ -73,7 +73,7 @@ category: Components
 </nav>
 ```
 
-# Disabled and active states
+## Disabled and active states
 
 <div class="bd-example">
   <nav aria-label="...">
@@ -147,7 +147,7 @@ category: Components
 </nav>
 ```
 
-# Sizing
+## Sizing
 
 <div class="bd-example">
   <nav aria-label="...">
@@ -197,7 +197,7 @@ category: Components
 </nav>
 ```
 
-# Alignment
+## Alignment
 
 <div class="bd-example">
   <nav aria-label="Page navigation example">

@@ -5,7 +5,7 @@ position: 23
 category: Components
 ---
 
-# Base nav
+## Base nav
 
 <div class="bd-example">
   <ul class="nav">
@@ -59,9 +59,9 @@ category: Components
 </nav>
 ```
 
-# Available styles
+## Available styles
 
-## Horizontal alignment
+### Horizontal alignment
 
 <div class="bd-example">
   <ul class="justify-center nav">
@@ -131,7 +131,7 @@ category: Components
 </ul>
 ```
 
-## Vertical
+### Vertical
 
 <div class="bd-example">
   <ul class="flex flex-col nav">
@@ -185,7 +185,7 @@ category: Components
 </nav>
 ```
 
-## Tabs
+### Tabs
 
 <div class="bd-example">
   <ul class="nav nav-tabs">
@@ -221,7 +221,7 @@ category: Components
 </ul>
 ```
 
-## Pills
+### Pills
 
 <div class="bd-example">
   <ul class="nav nav-pills">
@@ -257,7 +257,7 @@ category: Components
 </ul>
 ```
 
-## Fill and justify
+### Fill and justify
 
 <div class="bd-example">
   <ul class="nav nav-pills nav-fill">
@@ -363,9 +363,9 @@ category: Components
 </nav>
 ```
 
-# Regarding accessibility
+## Regarding accessibility
 
-# Using dropdowns
+## Using dropdowns
 
 <div class="bd-example">
   <ul class="nav nav-tabs">
@@ -427,7 +427,7 @@ category: Components
 </ul>
 ```
 
-## Pills with dropdowns
+### Pills with dropdowns
 
 <div class="bd-example">
   <ul class="nav nav-pills">

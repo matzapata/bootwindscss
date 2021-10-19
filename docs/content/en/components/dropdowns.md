@@ -5,7 +5,7 @@ position: 20
 category: Components
 ---
 
-## Single button
+### Single button
 
 <div class="bd-example">
   <div class="dropdown">
@@ -176,7 +176,7 @@ category: Components
 </div>
 ```
 
-## Split button
+### Split button
 
 <div class="flex flex-wrap gap-2 bd-example">
   <div class="btn-group">
@@ -299,7 +299,7 @@ category: Components
 </div>
 ```
 
-# Sizing
+## Sizing
 
 <div class="bd-example">
   <div class="btn-group">
@@ -434,7 +434,7 @@ category: Components
 </div>
 ```
 
-# Dark dropdowns
+## Dark dropdowns
 
 <div class="bd-example">
   <div class="dropdown">
@@ -550,9 +550,9 @@ category: Components
 </nav>
 ```
 
-# Directions
+## Directions
 
-## Dropup
+### Dropup
 
 <div class="bd-example">
   <div class="btn-group dropup">
@@ -622,7 +622,7 @@ category: Components
 </div>
 ```
 
-## Dropright
+### Dropright
 
 <div class="bd-example">
   <div class="btn-group dropend">
@@ -692,7 +692,7 @@ category: Components
 </div>
 ```
 
-## Dropleft
+### Dropleft
 
 <div class="bd-example">
   <div class="btn-group dropstart">
@@ -766,7 +766,7 @@ category: Components
 </div>
 ```
 
-# Menu items
+## Menu items
 
 <div class="bd-example">
   <div class="dropdown">
@@ -803,11 +803,11 @@ category: Components
 </div>
 ```
 
-# Dropdown options
+## Dropdown options
 
 <div class="bd-example">
   <div class="flex space-x-2">
-    <div class="dropdown mr-1">
+    <div class="mr-1 dropdown">
       <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown"
         aria-expanded="false" data-bs-offset="10,20">
         Offset
@@ -839,7 +839,7 @@ category: Components
 
 ```html
 <div class="flex">
-  <div class="dropdown mr-1">
+  <div class="mr-1 dropdown">
     <button
       type="button"
       class="btn btn-secondary dropdown-toggle"
@@ -881,7 +881,7 @@ category: Components
 </div>
 ```
 
-## Auto close behavior
+### Auto close behavior
 
 <div class="bd-example">
   <div class="btn-group">

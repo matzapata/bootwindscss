@@ -5,7 +5,21 @@ position: 14
 category: Components
 ---
 
-# Overview
+<!-- Import the icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+## Available classes
+
+```css
+.alert { /* Base component style  */ }
+.alert-{theme} { /* Applies theme colors */ }
+.alert-heading { /* Applies corresponding color to heading */ }
+.alert-link { /* Style to match alert theme */ }
+.alert-dismissible { /* To add a close btn */ }
+.alert-dismissible .btn-close { /* Close btn */ }
+```
+
+## Overview
 
 Use the `alert` and `alert-{theme}` classes to create simple alerts like below
 
@@ -63,7 +77,7 @@ Use the `alert` and `alert-{theme}` classes to create simple alerts like below
 </div>
 ```
 
-## Link color
+### Link color
 
 Use the `alert-link` to theme the links based on the alert theme
 
@@ -133,7 +147,7 @@ Use the `alert-link` to theme the links based on the alert theme
 </div>
 ```
 
-# Additional content
+## Additional content
 
 Remember, alert changes a couple of properties from the div, but it still is a div so feel free to add content inside and modify it with as many tw utilities as you want
 
@@ -163,7 +177,7 @@ Remember, alert changes a couple of properties from the div, but it still is a d
 </div>
 ```
 
-## Icons
+### Icons
 
 In these case we are using [Bootstrap icons](https://icons.getbootstrap.com/) but feel free to use your favorite provider
 
@@ -240,7 +254,7 @@ In these case we are using [Bootstrap icons](https://icons.getbootstrap.com/) bu
 </div>
 ```
 
-# Dismissing
+## Dismissing
 
 The overall javascript for the alerts is the original bootsrap.
 Using the alert JavaScript plugin, it’s possible to dismiss any alert inline. Here’s how:

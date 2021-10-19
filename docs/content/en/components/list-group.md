@@ -5,7 +5,7 @@ position: 21
 category: Components
 ---
 
-# Basic example
+## Basic example
 
 <div class="bd-example">
   <ul class="list-group">
@@ -27,7 +27,7 @@ category: Components
 </ul>
 ```
 
-# Active items
+## Active items
 
 <div class="bd-example">
   <ul class="list-group">
@@ -49,7 +49,7 @@ category: Components
 </ul>
 ```
 
-# Disabled items
+## Disabled items
 
 <div class="bd-example">
   <ul class="list-group">
@@ -71,7 +71,7 @@ category: Components
 </ul>
 ```
 
-# Links and buttons
+## Links and buttons
 
 <div class="bd-example">
   <div class="list-group">
@@ -145,7 +145,7 @@ category: Components
 </div>
 ```
 
-# Flush
+## Flush
 
 <div class="bd-example">
   <ul class="list-group list-group-flush">
@@ -167,7 +167,7 @@ category: Components
 </ul>
 ```
 
-# Numbered
+## Numbered
 
 <div class="bd-example">
   <ol class="list-group list-group-numbered">
@@ -237,7 +237,7 @@ category: Components
 </ol>
 ```
 
-# Horizontal
+## Horizontal
 
 <div class="flex flex-col gap-2 bd-example">
   <ul class="list-group list-group-horizontal">
@@ -305,7 +305,7 @@ category: Components
 </ul>
 ```
 
-# Contextual classes
+## Contextual classes
 
 <div class="bd-example">
   <ul class="list-group">
@@ -418,7 +418,7 @@ category: Components
 </div>
 ```
 
-# With badges
+## With badges
 
 <div class="bd-example">
   <ul class="list-group">
@@ -454,7 +454,7 @@ category: Components
 </ul>
 ```
 
-# Custom content
+## Custom content
 
 <div class="bd-example">
   <div class="inline-block list-group">
@@ -518,7 +518,7 @@ category: Components
 </div>
 ```
 
-# Checkboxes and radios
+## Checkboxes and radios
 
 <div class="bd-example">
   <ul class="list-group">

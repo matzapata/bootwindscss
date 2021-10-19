@@ -5,9 +5,9 @@ position: 19
 category: Components
 ---
 
-# How it works
+## How it works
 
-# Example
+## Example
 
 <div class="bd-example">
   <p>
@@ -44,7 +44,7 @@ category: Components
 </div>
 ```
 
-# Multiple targets
+## Multiple targets
 
 <div class="bd-example">
   <div class="flex flex-wrap gap-2 mb-2">

@@ -5,7 +5,19 @@ position: 12
 category: Forms
 ---
 
-# How it works
+## Available variables
+
+```css
+.is-valid { /* Manually set the validation state. Does not require .was-validated parent class. */ }
+.is-invalid { /* Manually set the validation state. Does not require .was-validated parent class. */ }
+.was-validated { /* Validates on client before submit */ }
+.needs-validation { /* Validates on client after submit */ }
+.has-validation { /* For inputs groups that use is-{valid|invalid} classes */ }
+.{ valid|invalid }-feedback { /* Feedback text */ }
+.{ valid|invalid }-tooltip { /* Display validation feedback in a styled tooltip. */ }
+```
+
+## How it works
 
 Use `was-validated` to validate on clientside before submit based on html validations like `required`.
 
@@ -127,7 +139,7 @@ Optionally you can use `is-valid` or `is-invalid` in the input field to set the 
   </div>
 ```
 
-# Supported elements
+## Supported elements
 
 Validation styles are available for the following form controls and components:
 

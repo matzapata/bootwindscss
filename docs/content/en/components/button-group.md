@@ -5,7 +5,18 @@ position: 17
 category: Components
 ---
 
-# Basic example
+## Available classes
+
+```css
+.btn-group { /* Base class */ }
+.btn-group-sm { /* Small size */ }
+.btn-group-lg { /* Large size */ }
+.btn-group-vertical { /* Vertical variant */ }
+```
+
+## Basic example
+
+Wrap a series of buttons with `.btn` in `.btn-group`.
 
 <div class="bd-example">
   <div class="btn-group" role="group" aria-label="Basic example">
@@ -23,6 +34,8 @@ category: Components
 </div>
 ```
 
+These classes can also be added to groups of links
+
 <div class="bd-example">
   <div class="btn-group">
     <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
@@ -39,7 +52,7 @@ category: Components
 </div>
 ```
 
-# Mixed styles
+## Mixed styles
 
 <div class="bd-example">
   <div class="btn-group" role="group" aria-label="Basic mixed styles example">
@@ -57,7 +70,7 @@ category: Components
 </div>
 ```
 
-# Outlined styles
+## Outlined styles
 
 <div class="bd-example">
   <div class="btn-group" role="group" aria-label="Basic outlined example">
@@ -75,7 +88,9 @@ category: Components
 </div>
 ```
 
-# Checkbox and radio button groups
+## Checkbox and radio button groups
+
+Combine button-like checkbox and radio toggle buttons into a seamless looking button group.
 
 <div class="bd-example">
   <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
@@ -152,88 +167,9 @@ category: Components
 </div>
 ```
 
-# Button toolbar
+## Sizing
 
-<div class="bd-example">
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="mr-2 btn-group" role="group" aria-label="First group">
-      <button type="button" class="btn btn-primary">1</button>
-      <button type="button" class="btn btn-primary">2</button>
-      <button type="button" class="btn btn-primary">3</button>
-      <button type="button" class="btn btn-primary">4</button>
-    </div>
-    <div class="mr-2 btn-group" role="group" aria-label="Second group">
-      <button type="button" class="btn btn-secondary">5</button>
-      <button type="button" class="btn btn-secondary">6</button>
-      <button type="button" class="btn btn-secondary">7</button>
-    </div>
-    <div class="btn-group" role="group" aria-label="Third group">
-      <button type="button" class="btn btn-info">8</button>
-    </div>
-  </div>
-</div>
-
-```html
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="mr-2 btn-group" role="group" aria-label="First group">
-    <button type="button" class="btn btn-primary">1</button>
-    <button type="button" class="btn btn-primary">2</button>
-    <button type="button" class="btn btn-primary">3</button>
-    <button type="button" class="btn btn-primary">4</button>
-  </div>
-  <div class="mr-2 btn-group" role="group" aria-label="Second group">
-    <button type="button" class="btn btn-secondary">5</button>
-    <button type="button" class="btn btn-secondary">6</button>
-    <button type="button" class="btn btn-secondary">7</button>
-  </div>
-  <div class="btn-group" role="group" aria-label="Third group">
-    <button type="button" class="btn btn-info">8</button>
-  </div>
-</div>
-```
-
-<div class="bd-example">
-  <div class="mb-3 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="mr-2 btn-group" role="group" aria-label="First group">
-      <button type="button" class="btn btn-outline-secondary">1</button>
-      <button type="button" class="btn btn-outline-secondary">2</button>
-      <button type="button" class="btn btn-outline-secondary">3</button>
-      <button type="button" class="btn btn-outline-secondary">4</button>
-    </div>
-    <div class="input-group">
-      <div class="input-group-text" id="btnGroupAddon">@</div>
-      <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example"
-        aria-describedby="btnGroupAddon">
-    </div>
-  </div>
-</div>
-
-```html
-<div
-  class="mb-3 btn-toolbar"
-  role="toolbar"
-  aria-label="Toolbar with button groups"
->
-  <div class="mr-2 btn-group" role="group" aria-label="First group">
-    <button type="button" class="btn btn-outline-secondary">1</button>
-    <button type="button" class="btn btn-outline-secondary">2</button>
-    <button type="button" class="btn btn-outline-secondary">3</button>
-    <button type="button" class="btn btn-outline-secondary">4</button>
-  </div>
-  <div class="input-group">
-    <div class="input-group-text" id="btnGroupAddon">@</div>
-    <input
-      type="text"
-      class="form-control"
-      placeholder="Input group example"
-      aria-label="Input group example"
-      aria-describedby="btnGroupAddon"
-    />
-  </div>
-</div>
-```
-
-# Sizing
+Instead of applying button sizing classes to every button in a group, just add .btn-group-* to each .btn-group, including each one when nesting multiple groups.
 
 <div class="space-y-2 bd-example">
   <div class="btn-group btn-group-lg " role="group" aria-label="Large button group">
@@ -285,7 +221,9 @@ category: Components
 </div>
 ```
 
-# Nesting
+## Nesting
+
+Place a `.btn-group` within another `.btn-group` when you want dropdown menus mixed with a series of buttons.
 
 <div class="bd-example">
   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
@@ -306,8 +244,7 @@ category: Components
 
 ```html
 <div
-  class="btn-group"
-  role="group"
+  class="btn-group"  role="group"
   aria-label="Button group with nested dropdown"
 >
   <button type="button" class="btn btn-primary">1</button>
@@ -331,7 +268,9 @@ category: Components
 </div>
 ```
 
-# Vertical variation
+## Vertical variation
+
+Make a set of buttons appear vertically stacked rather than horizontally. Split button dropdowns are not supported here.
 
 <div class="flex space-x-2 bd-example">
   <!-- first  -->
@@ -410,3 +349,4 @@ category: Components
 ```html
 <div class="btn-group-vertical">...</div>
 ```
+

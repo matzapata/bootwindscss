@@ -5,22 +5,29 @@ position: 16
 category: Components
 ---
 
-# Breadcrumb simple example
+## Available classes
 
-Remember to add the `a` class for links in case you want them to look like that, or simply add the class as a default in your main.scss
+```css
+.breadcrumb { /* Base styles */ }
+.breadcrumb-item { /* Item inside breadcrumb */ }
+```
+
+## Breadcrumb simple example
 
 <div class="bd-example">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Home</li>      
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
     </ol>
   </nav>
+
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item a">Home</li>
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Library</li>
     </ol>
   </nav>
+
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -53,7 +60,7 @@ Remember to add the `a` class for links in case you want them to look like that,
 </nav>
 ```
 
-# Dividers
+## Dividers
 
 For further reference on customizacion reach bootstrap docs. 
 

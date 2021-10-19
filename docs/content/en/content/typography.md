@@ -5,10 +5,13 @@ position: 3
 category: "Content"
 ---
 
-# Global settings
+## Overview
 
-# Headings
+By default we stick to tailwind guidelines and conserve the reset. To add any style just add the apropiate class or redefine the base styles on your custom.scss
 
+## Headings
+
+<div class="bd-example">
 <table class="table">
   <thead>
     <tr>
@@ -55,6 +58,7 @@ category: "Content"
     </tr>
   </tbody>
 </table>
+</div>
 
 ```html
 <h1>h1. Bootstrap heading</h1>
@@ -83,7 +87,7 @@ category: "Content"
 <p class="h6">h6. Bootstrap heading</p>
 ```
 
-# Display headings
+## Display headings
 
 <div class="bd-example">
   <div class="pb-3 mb-3 display-1 border-bottom">Display 1</div>
@@ -103,7 +107,7 @@ category: "Content"
 <h1 class="display-6">Display 6</h1>
 ```
 
-# Lead
+## Lead
 
 <div class="bd-example">
   <p class="lead">
@@ -117,7 +121,7 @@ category: "Content"
 </p>
 ```
 
-# Inline text elements
+## Inline text elements
 
 <div class="bd-example">
   <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -146,7 +150,7 @@ category: "Content"
 <p><em>This line rendered as italicized text.</em></p>
 ```
 
-# Abbreviations
+## Abbreviations
 
 <div class="bd-example">
   <p><abbr title="attribute">attr</abbr></p>
@@ -158,7 +162,7 @@ category: "Content"
 <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
 ```
 
-# Blockquotes
+## Blockquotes
 
 <div class="bd-example">
   <blockquote class="blockquote">
@@ -172,7 +176,7 @@ category: "Content"
 </blockquote>
 ```
 
-## Naming a source
+### Naming a source
 
 <div class="bd-example">
   <figure>
@@ -196,7 +200,9 @@ category: "Content"
 </figure>
 ```
 
-## Alignment
+### Alignment
+
+Just use tailwind utilities
 
 <div class="bd-example">
   <figure class="text-center">
@@ -242,9 +248,9 @@ category: "Content"
 </figure>
 ```
 
-# Lists
+## Lists
 
-## Unstyled
+### Unstyled
 
 Remember, here we are using tailwindcss fundamentals, so by default styles are on your own
 
@@ -283,7 +289,7 @@ Remember, here we are using tailwindcss fundamentals, so by default styles are o
 </ul>
 ```
 
-## Inline
+### Inline
 
 <div class="bd-example">
   <ul class="list-inline">

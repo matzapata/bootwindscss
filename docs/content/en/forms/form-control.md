@@ -5,7 +5,18 @@ position: 8
 category: Forms
 ---
 
-# Example
+## Available classes
+
+```css
+.form-control { /* General form control */ }
+.form-control-sm { /* Small variant */ }
+.form-control-lg { /* Large variant */ }
+.form-control-plaintext { /* Make input look like regular text. Mostly used in readonly inputs  */ }
+.form-control-color { /* Color picker component */ }
+.textarea { /* Text area component */ }
+```
+
+## Example
 
 Use `form-control` in combination with `type` to style input elements and `form-label` to style the corresponding labels
 
@@ -31,7 +42,7 @@ Use `form-control` in combination with `type` to style input elements and `form-
 </div>
 ```
 
-# Sizing
+## Sizing
 
 Set heights using classes like `form-control-lg` and `form-control-sm`
 
@@ -49,7 +60,7 @@ Set heights using classes like `form-control-lg` and `form-control-sm`
 <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example" />
 ```
 
-# Disabled
+## Disabled
 
 Add the `disabled` boolean attribute on an input to give it a grayed out appearance and remove pointer events.
 
@@ -64,7 +75,7 @@ Add the `disabled` boolean attribute on an input to give it a grayed out appeara
 <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly />
 ```
 
-# Readonly
+## Readonly
 
 Add the `readonly` boolean attribute on an input to prevent modification of the input’s value.
 
@@ -76,7 +87,7 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly />
 ```
 
-# Readonly plain text
+## Readonly plain text
 
 If you want to have `<input readonly>` elements in your form styled as plain text, use the `form-control-plaintext` class to remove the default form field styling and preserve the correct margin and padding. In this example we also make use of the tailwind grid sistem, take notice on the use of `col-form-label`.
 
@@ -102,7 +113,7 @@ If you want to have `<input readonly>` elements in your form styled as plain tex
 </div>
 ```
 
-# File input
+## File input
 
 <div class="bd-example">
   <div class="mb-3">
@@ -150,7 +161,7 @@ If you want to have `<input readonly>` elements in your form styled as plain tex
 </div>
 ```
 
-# Color
+## Color
 
 <div class="bd-example">
   <label for="exampleColorInput" class="form-label">Color picker</label>
@@ -163,7 +174,7 @@ If you want to have `<input readonly>` elements in your form styled as plain tex
 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color" />
 ```
 
-# Datalists
+## Datalists
 
 Datalists allow you to create a group of `<option>`s that can be accessed (and autocompleted) from within an `<input>`. These are similar to `<select>` elements, but come with more menu styling limitations and differences. While most browsers and operating systems include some support for `<datalist>` elements, their styling is inconsistent at best.
 

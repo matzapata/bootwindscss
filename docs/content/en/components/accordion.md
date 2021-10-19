@@ -5,12 +5,48 @@ position: 13
 category: Components
 ---
 
-# How it works
+## Available classes
+
+```css
+.accordion { /* Semantic porpouses only */ }
+.accordion-item { /* Encompasses all the item, including header, button and body */ }
+.accordion-header { /* Encompasses accordion button */ }
+.accordion-button { /* Button used to open and close the collapse */ }
+.accordion-collapse { /* Encompasses the body of the item. Is the div that is collapsed. */ }
+.accordion-body { /* Main content of the collapse item */ }
+.accordion-flush { /* Remove the default background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent container. */ }
+.collapse { /* Sets display to none if show is not available */ }
+.show { /* Shows the content */ }
+```
+
+## How it works
 
 The accordion uses collapse internally to make it collapsible. To render an accordion that’s expanded, add the `.open` class on the `.accordion.`
 
+<!-- TODO Agregar lño de data-bs- y aria-label- osea todo lo que tiene que matchear -->
 
-# Example
+## Structure
+
+```html
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion title
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        ...
+      </div>
+    </div>
+  </div>
+  <!-- More collapse-items -->
+</div>
+
+```
+
+## Example
 
 <div class="bd-example">
   <div class="accordion" id="accordionExample">
@@ -166,7 +202,7 @@ The accordion uses collapse internally to make it collapsible. To render an acco
 </div>
 ```
 
-## Flush
+### Flush
 
 Add `.accordion-flush` to remove the default background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent container.
 
@@ -307,7 +343,7 @@ Add `.accordion-flush` to remove the default background-color, some borders, and
 </div>
 ```
 
-## Always open
+### Always open
 
 Omit the `data-bs-parent` attribute on each `.accordion-collapse` to make accordion items stay open when another item is opened.
 

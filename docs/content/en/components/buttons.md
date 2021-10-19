@@ -5,7 +5,21 @@ position: 16
 category: Components
 ---
 
-# Examples
+### Available classes
+
+```css
+.btn { /* Base component */ }
+.btn-{color} { /* Adds theme to btn */ }
+.btn-outline-{color} { /* Adds outline and theme to btn  */ }
+.btn-link { /* Make a button look and behave like a link */ }
+.btn-lg { /* Large size variant */ }
+.btn-sm { /* Small size variant */ }
+```
+
+
+### Examples
+
+A simple example using `btn` and `btn-{theme}` to style buttons.
 
 <div class="flex flex-wrap gap-1 bd-example">
   <button type="button" class="btn btn-primary">Primary</button>
@@ -31,9 +45,15 @@ category: Components
 <button type="button" class="btn btn-link">Link</button>
 ```
 
-# Disable text wrapping
+### Disable text wrapping
 
-# Button tags
+If you dont want the button text to wrap, just use `whitespace-nowrap` from tailwind.
+
+### Button tags
+
+The `.btn` classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements (though some browsers may apply a slightly different rendering).
+
+When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
 
 <div class="bd-example">
   <a class="btn btn-primary" href="#" role="button">Link</a>
@@ -51,7 +71,9 @@ category: Components
 <input class="btn btn-primary" type="reset" value="Reset" />
 ```
 
-# Outline buttons
+### Outline buttons
+
+To create outlined buttons use the `btn-outline-{theme}` class in addition to the base `btn` class like below.
 
 <div class="flex flex-wrap gap-1 bd-example ">
   <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -75,7 +97,9 @@ category: Components
 <button type="button" class="btn btn-outline-dark">Dark</button>
 ```
 
-# Sizes
+### Sizes
+
+Add `btn-lg` or `btn-sm` for additional sizes.
 
 <div class="bd-example">
   <button type="button" class="btn btn-primary btn-lg">Large button</button>
@@ -97,7 +121,9 @@ category: Components
 <button type="button" class="btn btn-secondary btn-sm">Small button</button>
 ```
 
-# Disabled state
+### Disabled state
+
+Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element. Disabled buttons have `pointer-events: none` applied to, preventing hover and active states from triggering.
 
 <div class="bd-example">
   <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
@@ -110,6 +136,8 @@ category: Components
 </button>
 <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
 ```
+
+Disabled buttons using the `<a>` element must use the `disabled` class because they just dont have a `disabled ` attribute.
 
 <div class="bd-example">
   <a class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
@@ -125,7 +153,9 @@ category: Components
 >
 ```
 
-# Block buttons
+### Block buttons
+
+There are no special classes here, just use tw utilities as usual.
 
 <div class="space-y-2 bd-example">
     <button class="block w-full btn btn-primary" type="button">Button</button>
@@ -139,9 +169,13 @@ category: Components
 </div>
 ```
 
-# Button plugin
+### Button plugin
 
-## Toggle states
+The button plugin allows you to create simple on/off toggle buttons.
+
+#### Toggle states
+
+Add `data-bs-toggle="button"` to toggle a button’s active state. If you’re pre-toggling a button, you must manually add the `.active` class and `aria-pressed="true"` to ensure that it is conveyed appropriately to assistive technologies.
 
 <div class="bd-example">
   <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>

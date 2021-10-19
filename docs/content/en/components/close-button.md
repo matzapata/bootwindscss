@@ -5,7 +5,7 @@ position: 18
 category: Components
 ---
 
-# Example
+## Example
 
 <div class="bd-example">
         <button type="button" class="btn-close" aria-label="Close"></button>
@@ -15,7 +15,7 @@ category: Components
 <button type="button" class="btn-close" aria-label="Close"></button>
 ```
 
-# Disabled state
+## Disabled state
 
 <div class="bd-example">
         <button type="button" class="btn-close" disabled aria-label="Close"></button>
@@ -25,7 +25,7 @@ category: Components
 <button type="button" class="btn-close" disabled aria-label="Close"></button>
 ```
 
-# White variant
+## White variant
 
 <div class="bd-example">
 <div class="flex bg-dark align-center">

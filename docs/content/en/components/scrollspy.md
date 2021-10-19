@@ -5,9 +5,9 @@ position: 29
 category: Components
 ---
 
-# How it works
+## How it works
 
-# Example in navbar
+## Example in navbar
 
 Make sure to add `relative overflow-y-scroll` and specify a height like `h-48` on the element you are spying
 

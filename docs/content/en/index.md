@@ -14,11 +14,6 @@ features:
 
 [Module]() for [NuxtJS](https://nuxtjs.org).
 
-<alert type="success">
-
-Your documentation has been created successfully!
-
-</alert>
 
 ## Features
 

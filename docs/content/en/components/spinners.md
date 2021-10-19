@@ -5,9 +5,9 @@ position: 30
 category: Components
 ---
 
-# About
+## About
 
-# Border spinner
+## Border spinner
 
 <div class="bd-example">
   <div class="spinner-border" role="status">
@@ -21,7 +21,7 @@ category: Components
 </div>
 ```
 
-## Colors
+### Colors
 
 <div class="bd-example">
   <div class="spinner-border text-primary" role="status">
@@ -77,7 +77,7 @@ category: Components
 </div>
 ```
 
-# Growing spinner
+## Growing spinner
 
 <div class="bd-example">
   <div class="spinner-grow" role="status">
@@ -145,7 +145,7 @@ category: Components
 </div>
 ```
 
-# Size
+## Size
 
 <div class="bd-example">
   <div class="spinner-border spinner-border-sm" role="status">
@@ -183,7 +183,7 @@ category: Components
 </div>
 ```
 
-# Buttons
+## Buttons
 
 <div class="bd-example">
   <button class="btn btn-primary" type="button" disabled>

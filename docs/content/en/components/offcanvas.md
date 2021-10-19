@@ -5,13 +5,13 @@ position: 25
 category: Components
 ---
 
-# How it works
+## How it works
 
-# Examples
+## Examples
 
-# Offcanvas components
+## Offcanvas components
 
-# Live demo
+## Live demo
 
 <div class="bd-example">
   <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
@@ -107,7 +107,7 @@ category: Components
 </div>
 ```
 
-# Placement
+## Placement
 
 <div class="bd-example">
   <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
@@ -237,7 +237,7 @@ category: Components
 </div>
 ```
 
-# Backdrop
+## Backdrop
 
 <div class="bd-example">
   <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
