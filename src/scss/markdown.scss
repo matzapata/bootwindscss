@@ -132,11 +132,13 @@
     @include font-size($small-font-size);
   }
 
-  pre[class*="language-"] {
+  pre[class*="language-"],
+  .nuxt-content-highlight pre {
     border-radius: 0.5rem;
   }
 
-  .bd-example + pre[class*="language-"] {
+  .bd-example + pre[class*="language-"],
+  .bd-example + .nuxt-content-highlight pre {
     margin-top: 0px;
     border-radius: 0 0 0.5rem 0.5rem;
   }
@@ -148,10 +150,7 @@
     }
   } 
 
-}
-
-.nuxt-content {
-  p, li {
+  p, li, ol {
     code {
       color: #d63384;
     }
@@ -164,5 +163,5 @@
         text-decoration: $link-hover-decoration;
       }
     }
-  } 
+  }
 }

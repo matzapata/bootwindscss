@@ -2,8 +2,8 @@
   <div class="pt-16">
     <AppHeader />
 
-    <main class="container mx-auto px-4 lg:px-8">
-      <div class="flex flex-wrap relative">
+    <main class="container px-4 mx-auto lg:px-8">
+      <div class="relative flex flex-wrap">
         <AppNav />
 
         <Nuxt class="w-full lg:w-4/5" />
@@ -31,7 +31,7 @@ export default {
         return this.settings.title
       },
       bodyAttrs: {
-        class: [...this.bodyClass, 'antialiased text-gray-700 leading-normal bg-white dark:bg-gray-900 dark:text-gray-300']
+        class: [...this.bodyClass, 'antialiased text-gray-900 leading-normal bg-white dark:bg-gray-900 dark:text-gray-300']
       },
       ...i18nSeo,
       meta: (i18nSeo.meta || []).concat([
