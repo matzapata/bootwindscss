@@ -5,11 +5,32 @@ position: 22
 category: Components
 ---
 
-## How it works
+## Available classes
 
-## Examples
+```css
+.modal {/* max-width: 500px */}
+.modal-sm {/* max-width: 300px*/}
+.modal-lg {/* max-width: 800px */}
+.modal-xl {/* max-width: 1140px */}
+.modal.fade {/* Animation */}
+.modal-dialog {/**/} 
+.modal-content {/**/}
+.modal-header {/**/}
+.modal-title {/**/}
+.modal-body {/**/}
+.modal-footer {/**/}
+.modal-backdrop {/**/}
+.modal-dialog-scrollable {/**/} 
+.modal-dialog-centered {/**/}
+.modal-dialog.modal-fullscreen {/**/}
+.modal-dialog.modal-fullscreen-sm-down {/**/}
+.modal-dialog.modal-fullscreen-md-down {/**/}
+.modal-dialog.modal-fullscreen-lg-down {/**/}
+.modal-dialog.modal-fullscreen-xl-down {/**/}
+.modal-dialog.modal-fullscreen-xxl-down {/**/}
+```
 
-### Modal components
+## Modal components
 
 <div class="p-4 border">
 <div class="modal-content">
@@ -54,7 +75,7 @@ category: Components
 </div>
 ```
 
-### Live demo
+## Live demo
 
 <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -121,7 +142,7 @@ category: Components
 </div>
 ```
 
-### Static backdrop
+## Static backdrop
 
 When backdrop is set to static, the modal will not close when clicking outside it. Click the button below to try it.
 
@@ -195,7 +216,7 @@ When backdrop is set to static, the modal will not close when clicking outside i
 </div>
 ```
 
-### Scrolling long content
+## Scrolling long content
 
 <div class="modal fade" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog">
@@ -229,7 +250,7 @@ When backdrop is set to static, the modal will not close when clicking outside i
 <div class="modal-dialog modal-dialog-scrollable">...</div>
 ```
 
-### Vertically centered
+## Vertically centered
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
   aria-hidden="true">
@@ -292,7 +313,7 @@ When backdrop is set to static, the modal will not close when clicking outside i
 </div>
 ```
 
-### Tooltips and popovers
+## Tooltips and popovers
 
 <div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel"
   aria-hidden="true">
@@ -351,7 +372,7 @@ When backdrop is set to static, the modal will not close when clicking outside i
 </div>
 ```
 
-### Toggle between modals
+## Toggle between modals
 
 <div class="bd-example">
   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"

@@ -5,7 +5,12 @@ position: 19
 category: Components
 ---
 
-## How it works
+## Available classes
+
+```css
+.collapse { /* */ }
+.multi-collapse { /* TODO - Fix, multi-collapse appears on the examples but is not a bootstrap class*/ }
+```
 
 ## Example
 
@@ -21,6 +26,7 @@ category: Components
     </button>
   </p>
   <div class="collapse" id="collapseExample">
+  <!-- TODO - Fix card is not available anymore  -->
     <div class="card card-body">
       Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user
       activates the relevant trigger.

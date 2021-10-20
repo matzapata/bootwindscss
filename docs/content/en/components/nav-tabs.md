@@ -5,6 +5,20 @@ position: 23
 category: Components
 ---
 
+## Available classes
+
+```css
+.nav {/**/}
+.nav.disabled {/**/}
+.nav-item {/**/}
+.nav-link {/**/}
+.nav-tabs {/**/}
+.nav-pills {/**/}
+.nav-fill {/**/}
+.nav-justified {/**/}
+.tab-content {/**/}
+```
+
 ## Base nav
 
 <div class="bd-example">

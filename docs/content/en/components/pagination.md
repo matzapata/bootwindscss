@@ -5,6 +5,16 @@ position: 26
 category: Components
 ---
 
+## Available classes
+
+```css
+.pagination {/**/}
+.page-link {/**/}
+.page-item {/**/}
+.pagination-lg {/**/}
+.pagination-sm {/**/}
+```
+
 ## Overview
 
 <div class="bd-example">

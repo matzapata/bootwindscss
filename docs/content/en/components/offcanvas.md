@@ -5,11 +5,20 @@ position: 25
 category: Components
 ---
 
-## How it works
+## Available classes
 
-## Examples
-
-## Offcanvas components
+```css
+.offcanvas {/**/}
+.offcanvas-backdrop {/**/}
+.offcanvas-header {/**/}
+.offcanvas-title {/**/}
+.offcanvas-body {/**/}
+.offcanvas-start {/**/}
+.offcanvas-end {/**/}
+.offcanvas-top {/**/}
+.offcanvas-bottom {/**/}
+.offcanvas.show {/**/}
+```
 
 ## Live demo
 

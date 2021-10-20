@@ -5,7 +5,28 @@ position: 20
 category: Components
 ---
 
-### Single button
+## Available classes
+
+<!-- TODO - COMPLETE Classes descriptions -->
+```css
+.dropup {/**/}
+.dropend {/**/}
+.dropdown {/**/}
+.dropstart {/**/}
+.dropdown-toggle {/**/}
+.dropdown-menu {/**/}
+.dropdown-menu.show {/**/}
+.dropdown-menu#{$infix}-start {/**/}
+.dropdown-menu#{$infix}-end {/**/}
+.dropdown-menu[data-bs-popper] {/**/}
+.dropdown-menu-dark {/**/}
+.dropdown-header {/**/}
+.dropdown-divider {/**/}
+.dropdown-item {/**/}
+.dropdown-item-text {/**/}
+```
+
+## Single button
 
 <div class="bd-example">
   <div class="dropdown">
@@ -176,7 +197,7 @@ category: Components
 </div>
 ```
 
-### Split button
+## Split button
 
 <div class="flex flex-wrap gap-2 bd-example">
   <div class="btn-group">

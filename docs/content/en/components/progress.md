@@ -5,6 +5,15 @@ position: 28
 category: Components
 ---
 
+## Available classes
+
+```css
+.progress {/**/}
+.progress-bar {/**/}
+.progress-bar-striped {/**/} 
+.progress-bar-animated {/**/}
+```
+
 ## How it works
 
 <div class="space-y-2 bd-example">

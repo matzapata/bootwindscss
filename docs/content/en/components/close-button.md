@@ -5,6 +5,13 @@ position: 18
 category: Components
 ---
 
+## Available classes
+
+```css
+.close-btn { /* */ }
+.close-btn.close-btn-white { /* */ }
+```
+
 ## Example
 
 <div class="bd-example">

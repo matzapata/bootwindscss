@@ -5,6 +5,29 @@ position: 21
 category: Components
 ---
 
+<!-- TODO - Remove links actions -->
+<!-- TODO - Compleate classes descvription -->
+<!-- TODO - Complete examples descriptions -->
+
+## Available classes
+
+```css
+.list-group { /**/ }
+.list-group-item { /**/ }
+.list-group-item.active { /**/ }
+.list-group-item.disabled { /**/ }
+.list-group-flush { /**/ }
+.list-group-numbered { /**/ }
+.list-group-item-action { /**/ }
+.list-group-horizontal { /**/ }
+.list-group-horizontal-sm { /**/ }
+.list-group-horizontal-md { /**/ }
+.list-group-horizontal-lg { /**/ }
+.list-group-horizontal-xl { /**/ }
+.list-group-horizontal-xxl { /**/ }
+.list-group-item-{theme-color} { /**/ }
+```
+
 ## Basic example
 
 <div class="bd-example">
