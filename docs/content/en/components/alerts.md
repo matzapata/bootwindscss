@@ -11,17 +11,17 @@ category: Components
 ## Available classes
 
 ```css
-.alert { /* Base component style  */ }
-.alert-{theme} { /* Applies theme colors */ }
-.alert-heading { /* Applies corresponding color to heading */ }
-.alert-link { /* Style to match alert theme */ }
-.alert-dismissible { /* To add a close btn */ }
-.alert-dismissible .btn-close { /* Close btn */ }
+.alert {/**/}
+.alert-{theme-color} {/**/}
+.alert-heading {/**/}
+.alert-link {/**/}
+.alert-dismissible {/**/}
+.btn-close {/**/}
 ```
 
 ## Overview
 
-Use the `alert` and `alert-{theme}` classes to create simple alerts like below
+Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight required contextual classes (e.g., `.alert-success`)
 
 <div class="bd-example">
   <div class="alert alert-primary" role="alert">
@@ -79,7 +79,7 @@ Use the `alert` and `alert-{theme}` classes to create simple alerts like below
 
 ### Link color
 
-Use the `alert-link` to theme the links based on the alert theme
+Use the `alert-link` class to quickly provide matching colored links within any alert.
 
 <div class="bd-example">
   <div class="alert alert-primary" role="alert">
@@ -110,9 +110,9 @@ Use the `alert-link` to theme the links based on the alert theme
 
 ```html
 <div class="alert alert-primary" role="alert">
-  A simple primary alert with
-  <a href="#" class="alert-link">an example link</a>. Give it a click if you
-  like.
+A simple primary alert with
+<a href="#" class="alert-link">an example link</a>. Give it a click if you
+like.
 </div>
 <div class="alert alert-secondary" role="alert">
   A simple secondary alert with
@@ -149,7 +149,7 @@ Use the `alert-link` to theme the links based on the alert theme
 
 ## Additional content
 
-Remember, alert changes a couple of properties from the div, but it still is a div so feel free to add content inside and modify it with as many tw utilities as you want
+Use the .alert-link utility class to quickly provide matching colored links within any alert.
 
 <div class="bd-example">
   <div class="alert alert-success" role="alert">
@@ -179,7 +179,7 @@ Remember, alert changes a couple of properties from the div, but it still is a d
 
 ### Icons
 
-In these case we are using [Bootstrap icons](https://icons.getbootstrap.com/) but feel free to use your favorite provider
+In these case we are using [Bootstrap icons](https://icons.getbootstrap.com/) but feel free to use your favorite icons.
 
 <div class="bd-example">
   <div class="flex items-center alert alert-primary" role="alert">
@@ -276,11 +276,6 @@ You can see this in action with a live demo:
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
   <strong>Holy guacamole!</strong> You should check in on some of those fields
   below.
-  <button
-    type="button"
-    class="btn-close"
-    data-bs-dismiss="alert"
-    aria-label="Close"
-  ></button>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 ```

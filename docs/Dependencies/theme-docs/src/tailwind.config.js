@@ -17,9 +17,9 @@ module.exports = ({ nuxt }) => ({
       //   sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
       //   mono: ['DM Mono', ...defaultTheme.fontFamily.mono]
       // },
-      colors: {
-        primary: getColors(nuxt.options.docs.primaryColor)
-      },
+      // colors: {
+      //   primary: getColors(nuxt.options.docs.primaryColor)
+      // },
       // maxHeight: {
       //   '(screen-16)': 'calc(100vh - 4rem)'
       // },

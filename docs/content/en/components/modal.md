@@ -12,7 +12,7 @@ category: Components
 .modal-sm {/* max-width: 300px*/}
 .modal-lg {/* max-width: 800px */}
 .modal-xl {/* max-width: 1140px */}
-.modal.fade {/* Animation */}
+.fade {/* Animation */}
 .modal-dialog {/**/} 
 .modal-content {/**/}
 .modal-header {/**/}
@@ -30,10 +30,30 @@ category: Components
 .modal-dialog.modal-fullscreen-xxl-down {/**/}
 ```
 
+## Overview
+
+* Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the `<body>` so that modal content scrolls instead.
+* Clicking on the modal “backdrop” will automatically close the modal.
+* Bootstrap only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.
+* Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a `.modal` within another fixed element.
+* Due to how HTML5 defines its semantics, the autofocus HTML attribute has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:
+
+```js
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+```
+
+
 ## Modal components
 
-<div class="p-4 border">
-<div class="modal-content">
+Here we present the typical structure of a modal.
+
+<div class="bd-example">
+<div class="max-w-md modal-content">
   <div class="modal-header">
     <h5 class="modal-title">Modal title</h5>
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -54,12 +74,7 @@ category: Components
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Modal title</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <p>Modal body text goes here.</p>
@@ -75,7 +90,44 @@ category: Components
 </div>
 ```
 
+## Minimal example
+
+If you just want to use the minimum functionality and do the rest with tailwind here is an example. Note the use of `data-bs-target` and `id`
+
+<div class="modal fade" id="exampleModalMinimal" tabindex="-1" aria-labelledby="exampleModalMinimalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="block p-4 modal-content">
+        <h1 class="mb-2 h1">Hello</h1>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<div class="bd-example">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalMinimal">
+    Launch demo modal
+  </button>
+</div>
+
+```html
+<div class="modal fade" id="exampleModalMinimal" tabindex="-1" aria-labelledby="exampleModalMinimalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="block p-4 modal-content">
+      <h1 class="mb-2 h1">Hello</h1>
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+<div class="bd-example">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalMinimal">
+    Launch demo modal
+  </button>
+</div>
+```
+
 ## Live demo
+
+Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page. Note how we use `data-bs-toggle="modal"` and `data-bs-target="#id"` to launch the modal and 
 
 <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -102,40 +154,26 @@ category: Components
 
 ```html
 <!-- Button trigger modal -->
-<button
-  type="button"
-  class="btn btn-primary"
-  data-bs-toggle="modal"
-  data-bs-target="#exampleModal"
->
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button" >
   Launch demo modal
 </button>
 
 <!-- Modal -->
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">...</div>
+      <div class="modal-body">
+        ...
+      </div>
       <div class="modal-footer">
+        ...
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Close
         </button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -174,42 +212,21 @@ When backdrop is set to static, the modal will not close when clicking outside i
 
 ```html
 <!-- Button trigger modal -->
-<button
-  type="button"
-  class="btn btn-primary"
-  data-bs-toggle="modal"
-  data-bs-target="#staticBackdrop"
->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Launch static backdrop modal
 </button>
 
 <!-- Modal -->
-<div
-  class="modal fade"
-  id="staticBackdrop"
-  data-bs-backdrop="static"
-  data-bs-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
+      <div class="modal-header">...</div>
       <div class="modal-body">...</div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Close
         </button>
-        <button type="button" class="btn btn-primary">Understood</button>
       </div>
     </div>
   </div>
@@ -217,6 +234,8 @@ When backdrop is set to static, the modal will not close when clicking outside i
 ```
 
 ## Scrolling long content
+
+When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.
 
 <div class="modal fade" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog">
@@ -245,12 +264,42 @@ When backdrop is set to static, the modal will not close when clicking outside i
   </button>
 </div>
 
+
+You can also create a scrollable modal that allows scroll the modal body by adding `.modal-dialog-scrollable` to `.modal-dialog`.
+
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>This content should appear at the bottom after you scroll.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bd-example">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
+    Launch demo modal
+  </button>
+</div>
+
 ```html
-<!-- Scrollable modal -->
 <div class="modal-dialog modal-dialog-scrollable">...</div>
 ```
 
 ## Vertically centered
+
+Add `.modal-dialog-centered` to `.modal-dialog` to vertically center the modal.
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
   aria-hidden="true">
@@ -313,66 +362,11 @@ When backdrop is set to static, the modal will not close when clicking outside i
 </div>
 ```
 
-## Tooltips and popovers
-
-<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel"
-  aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalPopoversLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h5>Popover in a modal</h5>
-        <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title"
-            data-bs-content="Popover body content is set in this attribute."
-            data-bs-container="#exampleModalPopovers">button</a> triggers a popover on click.</p>
-        <hr>
-        <h5>Tooltips in a modal</h5>
-        <p><a href="#" class="tooltip-test" title="Tooltip" data-bs-container="#exampleModalPopovers">This link</a> and
-          <a href="#" class="tooltip-test" title="Tooltip" data-bs-container="#exampleModalPopovers">that link</a> have
-          tooltips on hover.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bd-example">
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">
-    Launch demo modal
-  </button>
-</div>
-
-```html
-<div class="modal-body">
-  <h5>Popover in a modal</h5>
-  <p>
-    This
-    <a
-      href="#"
-      role="button"
-      class="btn btn-secondary popover-test"
-      title="Popover title"
-      data-bs-content="Popover body content is set in this attribute."
-      >button</a
-    >
-    triggers a popover on click.
-  </p>
-  <hr />
-  <h5>Tooltips in a modal</h5>
-  <p>
-    <a href="#" class="tooltip-test" title="Tooltip">This link</a> and
-    <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips
-    on hover.
-  </p>
-</div>
-```
+<!-- TODO - MODAL TOOLTIPS AND POPOVERS -->
 
 ## Toggle between modals
+
+Make focus on the use of `data-bs-dismiss="modal"` and `data-bs-target="#id"`. There is nothing new here, it's just that we are using the close button as a launch as well.
 
 <div class="bd-example">
   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
@@ -387,7 +381,8 @@ When backdrop is set to static, the modal will not close when clicking outside i
           Show a second modal and hide this one with the button below.
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Open second
             modal</button>
         </div>
       </div>
@@ -405,7 +400,8 @@ When backdrop is set to static, the modal will not close when clicking outside i
           Hide this modal and show the first with the button below.
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Back to
             first</button>
         </div>
       </div>
@@ -415,77 +411,45 @@ When backdrop is set to static, the modal will not close when clicking outside i
 </div>
 
 ```html
-<div
-  class="modal fade"
-  id="exampleModalToggle"
-  aria-hidden="true"
-  aria-labelledby="exampleModalToggleLabel"
-  tabindex="-1"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        Show a second modal and hide this one with the button below.
-      </div>
-      <div class="modal-footer">
-        <button
-          class="btn btn-primary"
-          data-bs-target="#exampleModalToggle2"
-          data-bs-toggle="modal"
-        >
-          Open second modal
-        </button>
+<div class="bd-example">
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Show a second modal and hide this one with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Open second
+            modal</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div
-  class="modal fade"
-  id="exampleModalToggle2"
-  aria-hidden="true"
-  aria-labelledby="exampleModalToggleLabel2"
-  tabindex="-1"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        Hide this modal and show the first with the button below.
-      </div>
-      <div class="modal-footer">
-        <button
-          class="btn btn-primary"
-          data-bs-target="#exampleModalToggle"
-          data-bs-toggle="modal"
-        >
-          Back to first
-        </button>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hide this modal and show the first with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Back to
+            first</button>
+        </div>
       </div>
     </div>
   </div>
+  <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
 </div>
-<a
-  class="btn btn-primary"
-  data-bs-toggle="modal"
-  href="#exampleModalToggle"
-  role="button"
-  >Open first modal</a
->
 ```

@@ -8,12 +8,12 @@ category: Components
 ## Available classes
 
 ```css
-.badge { /* Base class */ }
+.badge {/**/}
 ```
 
 ## Basic examples
 
-Badges scale to match the size of the immediate parent element by using relative font sizing and em units.
+Badges scale to match the size of the immediate parent element by using relative font sizing and em units. 
 
 ### Headings
 
@@ -35,9 +35,9 @@ Badges scale to match the size of the immediate parent element by using relative
 <h6 class="h6">Example heading <span class="bg-green-500 badge">New</span></h6>
 ```
 
-### Buttons possitioned
+### Buttons positioned
 
-Badges are styles span so use them as whished wherever you see fit. Here are some examples with buttons. Position them as usual with tailwind utilities
+Use utilities to modify `.badge` and position it in the corner of a link or button.
 
 <div class="bd-example">
   <button type="button" class="relative btn btn-primary">
@@ -52,6 +52,8 @@ Badges are styles span so use them as whished wherever you see fit. Here are som
   <span class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-danger badge">99</span>
 </button>
 ```
+
+You can also customize the `.badge` class with a few more utilities to create a more generic indicator. Remember, these are all tailwind utilities.
 
 <div class="bd-example">
 <button type="button" class="relative btn btn-primary">
@@ -69,7 +71,7 @@ Badges are styles span so use them as whished wherever you see fit. Here are som
 
 ## Background colors
 
-Here we are using tailwindcss for changing the colors so you can use not just the theme colors but anyone you want. Remember that the theme colors are included with the preset.
+Change the colors to fit your design with tailwind utilities wherever you want. Remember that bootstrap theme colors are included in the preset so you can access them like any other tw color.
 
 <div class="bd-example">
   <span class="badge bg-primary">Primary</span>
@@ -95,7 +97,7 @@ Here we are using tailwindcss for changing the colors so you can use not just th
 
 ## Pill badges
 
-To make them rounded just use the `rounded-full` tailwind utility.
+Use `.rounded-full` utility to make badges rounded.
 
 <div class="bd-example">
   <span class="rounded-full badge bg-primary">Primary</span>

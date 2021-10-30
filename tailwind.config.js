@@ -1,5 +1,5 @@
 module.exports = {
   presets: [
-    require('./src/tw.preset')
+    require('./tw.preset')
   ],
 }

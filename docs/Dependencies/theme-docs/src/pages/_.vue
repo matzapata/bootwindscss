@@ -12,7 +12,7 @@
         'lg:border-l lg:border-r': settings.layout !== 'single'
       }"
     >
-      <article class="prose dark:prose-dark max-w-none lg:px-8">
+      <article  class="prose dark:prose-dark max-w-none lg:px-8">
         <h1 class="flex items-center justify-between">
           {{ document.title }}
           <Badge v-if="document.badge">{{ document.badge }}</Badge>

@@ -1,6 +1,6 @@
 {
-  "name": "tailboots",
-  "version": "1.0.0",
+  "name": "bootwindscss",
+  "version": "1.0.1",
   "description": "",
   "directories": {
     "doc": "docs"
@@ -9,28 +9,41 @@
     "dev": "npm run dev:watch:scss & npm run dev:watch:tw & npm run dev:serve",
     "dev:serve": "node main.js",
     "dev:watch:tw": "tailwindcss -o ./devAssets/css/tailwind.css --watch",
-    "dev:watch:scss": "sass ./src/scss/all.scss ./devAssets/css/all.css --watch & sass ./src/scss/markdown.scss ./devAssets/css/markdown.css --watch",
-    "build:scss": "sass ./src/scss/main.scss ./dist/css/main.css",
+    "dev:watch:scss": "sass ./scss/all.scss ./devAssets/css/all.css --watch & sass ./scss/markdown.scss ./devAssets/css/markdown.css --watch",
+    "build:scss": "sass ./scss/main.scss ./dist/css/main.css",
     "build:css": "tailwindcss build -i ./dist/css/main.css -o ./dist/css/tailboots.css",
     "build:md": "sass src/scss/markdown.scss dist/css/markdown.css",
     "build": "npm run build:scss && npm run build:css && npm run build:md",
-    "clean": "rm ./dist/css/main.css && rm ./dist/css/main.css.map"
+    "clean": "rm ./dist/css/main.css && rm ./dist/css/main.css.map",
+    "list:classes": "node ./utils/list-classes.js"
   },
   "files": [
-    "src/scss/*.scss"
+    "dist/",
+    "scss/*.scss",
+    "js/*.js",
+    "tw.preset.js"
   ],
-  "keywords": [],
+  "keywords": [
+    "css",
+    "scss",
+    "tailwindcss",
+    "bootstrap",
+    "framework",
+    "web"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^10.3.6",
-    "body-parser": "^1.19.0",
+  },
+  "devDependencies": {
     "ejs": "^3.1.6",
+    "sass": "^1.42.1",
+    "autoprefixer": "^10.3.6",
+    "tailwindcss": "^2.2.16",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "gray-matter": "^4.0.3",
-    "markdown-it": "^12.2.0",
-    "sass": "^1.42.1",
-    "tailwindcss": "^2.2.16"
-  },
-  "devDependencies": {}
+    "markdown-it": "^12.2.0"
+
+  }
 }

@@ -97,23 +97,42 @@
 .nuxt-content > small {
   font-size: 0.875em;
 }
-.nuxt-content > pre[class*=language-] {
+.nuxt-content > pre[class*=language-],
+.nuxt-content > .nuxt-content-highlight pre {
+  border-radius: 0.5rem;
+}
+.nuxt-content > .bd-example + pre[class*=language-],
+.nuxt-content > .bd-example + .nuxt-content-highlight pre {
   margin-top: 0px;
   border-radius: 0 0 0.5rem 0.5rem;
 }
-.nuxt-content > .nuxt-content-highlight > pre[class*=language-] {
+.nuxt-content > .nuxt-content-highlight .bd-example + pre[class*=language-] {
   margin-top: 0px;
   border-radius: 0 0 0.5rem 0.5rem;
 }
-
-.nuxt-content p code, .nuxt-content li code {
-  color: #d63384;
+.nuxt-content > p code,
+.nuxt-content > li code,
+.nuxt-content > ol code,
+.nuxt-content > ul code {
+  color: #e24f55;
+  background-color: #fcedee;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 0.25rem;
 }
-.nuxt-content p a, .nuxt-content li a {
+.nuxt-content > p a,
+.nuxt-content > li a,
+.nuxt-content > ol a,
+.nuxt-content > ul a {
   color: #0d6efd;
   text-decoration: underline;
 }
-.nuxt-content p a:hover, .nuxt-content li a:hover {
+.nuxt-content > p a:hover,
+.nuxt-content > li a:hover,
+.nuxt-content > ol a:hover,
+.nuxt-content > ul a:hover {
   color: #0a58ca;
 }
 

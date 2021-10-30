@@ -11,7 +11,7 @@
         <p
           class="mb-3 text-sm font-bold tracking-wider text-gray-500 uppercase lg:mb-2 lg:text-xs"
         >{{ $t('toc.title') }}</p>
-        <scrollactive highlight-first-item active-class="text-primary-500" :offset="0" tag="ul">
+        <scrollactive active-class="text-red-500" :offset="100" tag="ul">
           <li
             v-for="link of toc"
             :key="link.id"

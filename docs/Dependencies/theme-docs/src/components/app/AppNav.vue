@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="w-full lg:w-1/5 lg:block fixed lg:relative inset-0 mt-16 lg:mt-0 z-30 bg-white dark:bg-gray-900 lg:bg-transparent lg:dark:bg-transparent"
+    class="fixed inset-0 z-30 w-full mt-16 bg-white lg:w-1/5 lg:block lg:relative lg:mt-0 dark:bg-gray-900 lg:bg-transparent lg:dark:bg-transparent"
     :class="{ 'block': menu, 'hidden': !menu }"
   >
     <div class="lg:sticky lg:top-16 overflow-y-auto h-full lg:h-auto lg:max-h-(screen-16)">
@@ -19,28 +19,28 @@
         >
           <p
             v-if="category"
-            class="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs"
+            class="mb-2 text-sm font-bold tracking-wider text-gray-500 uppercase lg:text-xs"
           >{{ category }}</p>
           <ul>
             <li v-for="doc of docs" :key="doc.slug" class="text-gray-700 dark:text-gray-300">
               <NuxtLink
                 :to="localePath(doc.to)"
-                class="px-2 rounded font-medium py-1 hover:text-primary-500 flex items-center justify-between"
-                exact-active-class="text-primary-500 bg-primary-100 hover:text-primary-500 dark:bg-primary-900"
+                class="flex items-center justify-between px-2 py-1 font-medium rounded hover:text-red-500"
+                exact-active-class="text-red-500 bg-red-100 hover:text-red-500 dark:bg-red-900"
               >
                 {{ doc.menuTitle || doc.title }}
                 <client-only>
                   <span
                     v-if="isDocumentNew(doc)"
-                    class="animate-pulse rounded-full bg-primary-500 opacity-75 h-2 w-2"
+                    class="w-2 h-2 rounded-full opacity-75 animate-pulse bg-primary-500"
                   />
                 </client-only>
               </NuxtLink>
             </li>
           </ul>
         </li>
-        <li class="lg:hidden space-x-2">
-          <p class="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">More</p>
+        <li class="space-x-2 lg:hidden">
+          <p class="mb-2 text-sm font-bold tracking-wider text-gray-500 uppercase lg:text-xs">More</p>
           <div class="flex items-center space-x-4">
             <a
               v-if="settings.twitter"

@@ -8,35 +8,6 @@
 // Navbar position
 // Navbar themes
 
-
-// Navbar
-//
-// Provide a static navbar from which we expand to create full-width, fixed, and
-// other navbar variations.
-
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap; // allow us to do the line break for collapsing content
-  align-items: center;
-  justify-content: space-between; // space out brand from logo
-  padding-top: $navbar-padding-y;
-  padding-right: $navbar-padding-x; // default: null
-  padding-bottom: $navbar-padding-y;
-  padding-left: $navbar-padding-x; // default: null
-  @include gradient-bg();
-
-  @each $breakpoint, $container-max-width in $container-max-widths {
-    > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
-      display: flex;
-      flex-wrap: inherit;
-      align-items: center;
-      justify-content: space-between;
-    }
-  }
-}
-
-
 // Navbar brand
 //
 // Used for brand, project, or site names.
@@ -56,6 +27,16 @@
 }
 
 
+// Navbar text
+//
+//
+
+.navbar-text {
+  padding-top: $nav-link-padding-y;
+  padding-bottom: $nav-link-padding-y;
+}
+
+
 // Navbar nav
 //
 // Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
@@ -63,7 +44,7 @@
 .navbar-nav {
   display: flex;
   flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
-  padding-left: 0;
+  padding: 0;
   margin-bottom: 0;
   list-style: none;
 
@@ -76,17 +57,6 @@
     position: static;
   }
 }
-
-
-// Navbar text
-//
-//
-
-.navbar-text {
-  padding-top: $nav-link-padding-y;
-  padding-bottom: $nav-link-padding-y;
-}
-
 
 // Responsive navbar
 //

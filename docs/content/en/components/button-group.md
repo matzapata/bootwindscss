@@ -8,10 +8,10 @@ category: Components
 ## Available classes
 
 ```css
-.btn-group { /* Base class */ }
-.btn-group-sm { /* Small size */ }
-.btn-group-lg { /* Large size */ }
-.btn-group-vertical { /* Vertical variant */ }
+.btn-group {/**/}
+.btn-group-sm {/**/}
+.btn-group-lg {/**/}
+.btn-group-vertical {/**/}
 ```
 
 ## Basic example
@@ -104,11 +104,7 @@ Combine button-like checkbox and radio toggle buttons into a seamless looking bu
 </div>
 
 ```html
-<div
-  class="btn-group"
-  role="group"
-  aria-label="Basic checkbox toggle button group"
->
+<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
   <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
   <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
 
@@ -132,37 +128,14 @@ Combine button-like checkbox and radio toggle buttons into a seamless looking bu
 </div>
 
 ```html
-<div
-  class="btn-group"
-  role="group"
-  aria-label="Basic radio toggle button group"
->
-  <input
-    type="radio"
-    class="btn-check"
-    name="btnradio"
-    id="btnradio1"
-    autocomplete="off"
-    checked
-  />
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
   <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
 
-  <input
-    type="radio"
-    class="btn-check"
-    name="btnradio"
-    id="btnradio2"
-    autocomplete="off"
-  />
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
   <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
 
-  <input
-    type="radio"
-    class="btn-check"
-    name="btnradio"
-    id="btnradio3"
-    autocomplete="off"
-  />
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
   <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
 </div>
 ```
@@ -192,32 +165,22 @@ Instead of applying button sizing classes to every button in a group, just add .
 </div>
 
 ```html
-<div class="space-y-2 bd-example">
-  <div
-    class="btn-group btn-group-lg "
-    role="group"
-    aria-label="Large button group"
-  >
-    <button type="button" class="btn btn-outline-dark">Left</button>
-    <button type="button" class="btn btn-outline-dark">Middle</button>
-    <button type="button" class="btn btn-outline-dark">Right</button>
-  </div>
-  <br />
-  <div class="btn-group" role="group" aria-label="Default button group">
-    <button type="button" class="btn btn-outline-dark">Left</button>
-    <button type="button" class="btn btn-outline-dark">Middle</button>
-    <button type="button" class="btn btn-outline-dark">Right</button>
-  </div>
-  <br />
-  <div
-    class="btn-group btn-group-sm"
-    role="group"
-    aria-label="Small button group"
-  >
-    <button type="button" class="btn btn-outline-dark">Left</button>
-    <button type="button" class="btn btn-outline-dark">Middle</button>
-    <button type="button" class="btn btn-outline-dark">Right</button>
-  </div>
+<div class="btn-group btn-group-lg " role="group" aria-label="Large button group">
+  <button type="button" class="btn btn-outline-dark">Left</button>
+  <button type="button" class="btn btn-outline-dark">Middle</button>
+  <button type="button" class="btn btn-outline-dark">Right</button>
+</div>
+<br />
+<div class="btn-group" role="group" aria-label="Default button group">
+  <button type="button" class="btn btn-outline-dark">Left</button>
+  <button type="button" class="btn btn-outline-dark">Middle</button>
+  <button type="button" class="btn btn-outline-dark">Right</button>
+</div>
+<br />
+<div role="group" class="btn-group btn-group-sm" aria-label="Small button group">
+  <button type="button" class="btn btn-outline-dark">Left</button>
+  <button type="button" class="btn btn-outline-dark">Middle</button>
+  <button type="button" class="btn btn-outline-dark">Right</button>
 </div>
 ```
 
@@ -243,21 +206,13 @@ Place a `.btn-group` within another `.btn-group` when you want dropdown menus mi
 </div>
 
 ```html
-<div
-  class="btn-group"  role="group"
-  aria-label="Button group with nested dropdown"
->
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <button type="button" class="btn btn-primary">1</button>
   <button type="button" class="btn btn-primary">2</button>
 
   <div class="btn-group" role="group">
-    <button
-      id="btnGroupDrop1"
-      type="button"
-      class="btn btn-primary dropdown-toggle"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
-    >
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+      aria-expanded="false">
       Dropdown
     </button>
     <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
