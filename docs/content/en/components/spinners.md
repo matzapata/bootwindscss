@@ -5,9 +5,9 @@ position: 30
 category: Components
 ---
 
-## About
-
 ## Border spinner
+
+Simple example. Here `<span class="hidden">Loading...</span>` is just for accessibility purposes.
 
 <div class="bd-example">
   <div class="spinner-border" role="status">
@@ -23,8 +23,10 @@ category: Components
 
 ### Colors
 
+The border spinner uses `currentColor` for its `border-color`, meaning you can customize the color with tailwind text color utilities.
+
 <div class="bd-example">
-  <div class="spinner-border text-primary" role="status">
+  <div class="text-blue-500 spinner-border" role="status">
     <span class="hidden">Loading...</span>
   </div>
   <div class="spinner-border text-secondary" role="status">
@@ -51,7 +53,7 @@ category: Components
 </div>
 
 ```html
-<div class="spinner-border text-primary" role="status">
+<div class="text-blue-500 spinner-border" role="status">
   <span class="hidden">Loading...</span>
 </div>
 <div class="spinner-border text-secondary" role="status">
@@ -79,6 +81,8 @@ category: Components
 
 ## Growing spinner
 
+Here a growing spinner example.
+
 <div class="bd-example">
   <div class="spinner-grow" role="status">
     <span class="hidden">Loading...</span>
@@ -90,6 +94,7 @@ category: Components
   <span class="hidden">Loading...</span>
 </div>
 ```
+Once again, this spinner is built with `currentColor`, so you can easily change its appearance with text color utilities.
 
 <div class="bd-example">
   <div class="spinner-grow text-primary" role="status">
@@ -145,7 +150,13 @@ category: Components
 </div>
 ```
 
+## Aligment 
+
+Spinners in Bootstrap are built with `rem`s, `currentColor`, and `display: inline-flex`. This means they can easily be resized, recolored, and quickly aligned.
+
 ## Size
+
+Add `.spinner-border-sm` and `.spinner-grow-sm` to make a smaller spinner that can quickly be used within other components.
 
 <div class="bd-example">
   <div class="spinner-border spinner-border-sm" role="status">
@@ -164,6 +175,8 @@ category: Components
   <span class="hidden">Loading...</span>
 </div>
 ```
+
+Or, use custom CSS or inline styles to change the dimensions as needed.
 
 <div class="bd-example">
   <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
@@ -185,6 +198,8 @@ category: Components
 
 ## Buttons
 
+Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.
+
 <div class="bd-example">
   <button class="btn btn-primary" type="button" disabled>
     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -198,19 +213,11 @@ category: Components
 
 ```html
 <button class="btn btn-primary" type="button" disabled>
-  <span
-    class="spinner-border spinner-border-sm"
-    role="status"
-    aria-hidden="true"
-  ></span>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
   <span class="hidden">Loading...</span>
 </button>
 <button class="btn btn-primary" type="button" disabled>
-  <span
-    class="spinner-border spinner-border-sm"
-    role="status"
-    aria-hidden="true"
-  ></span>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
   Loading...
 </button>
 ```
@@ -228,19 +235,11 @@ category: Components
 
 ```html
 <button class="btn btn-primary" type="button" disabled>
-  <span
-    class="spinner-grow spinner-grow-sm"
-    role="status"
-    aria-hidden="true"
-  ></span>
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
   <span class="hidden">Loading...</span>
 </button>
 <button class="btn btn-primary" type="button" disabled>
-  <span
-    class="spinner-grow spinner-grow-sm"
-    role="status"
-    aria-hidden="true"
-  ></span>
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
   Loading...
 </button>
 ```
