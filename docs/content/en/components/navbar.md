@@ -28,7 +28,7 @@ Here’s what you need to know before getting started with the navbar:
 
 * Navbars require a wrapping `.navbar` with `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` for responsive collapsing and color scheme classes. Don't worry, the breakpoints are shared with tailwind through the preset. Otherwise change them with the sass variables.
 * Use tailwindcss spacing and flex utility classes for controlling spacing and alignment within navbars.
-* Make navbars responsive [collapse](/docs/components/collapse)
+* Make navbars responsive [collapse]()
 
 ## Supported content
 

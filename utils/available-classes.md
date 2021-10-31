@@ -1,5 +1,5 @@
 
-# /home/matiaszapata/git/tailboots/docs/content/en/components/
+# /home/matiaszapata/git/bootwindscss/docs/content/en/components/
 
 ## accordion.md
 .accordion {/**/}
@@ -11,7 +11,6 @@
 .show {/**/}
 .accordion-body {/**/}
 .collapsed {/**/}
-.bg-light {/**/}
 .accordion-flush {/**/}
 
 ## alerts.md
@@ -29,7 +28,6 @@
 .h4 {/**/}
 .bi {/**/}
 .bi-info-circle-fill {/**/}
-.pl-2 {/**/}
 .bi-check-circle-fill {/**/}
 .bi-exclamation-triangle-fill {/**/}
 .alert-dismissible {/**/}
@@ -38,18 +36,22 @@
 .btn-close {/**/}
 
 ## badge.md
+.h1 {/**/}
 .badge {/**/}
-.bg-danger {/**/}
+.h2 {/**/}
+.h3 {/**/}
+.h4 {/**/}
+.h5 {/**/}
+.h6 {/**/}
+.relative {/**/}
+.btn {/**/}
+.btn-primary {/**/}
+.absolute {/**/}
+.right-0 {/**/}
+.transform {/**/}
+.translate-x-1/2 {/**/}
+.-translate-y-1/2 {/**/}
 .rounded-full {/**/}
-.bg-primary {/**/}
-.bg-secondary {/**/}
-.bg-success {/**/}
-.bg-warning {/**/}
-.text-dark {/**/}
-.bg-info {/**/}
-.bg-light {/**/}
-.bg-black {/**/}
-.bg-dark {/**/}
 
 ## breadcumb.md
 .breadcrumb {/**/}
@@ -68,6 +70,7 @@
 .btn-outline-primary {/**/}
 .btn-check {/**/}
 .btn-group-lg {/**/}
+. {/**/}
 .btn-outline-dark {/**/}
 .btn-group-sm {/**/}
 .dropdown-toggle {/**/}
@@ -88,6 +91,7 @@
 .btn-light {/**/}
 .btn-dark {/**/}
 .btn-link {/**/}
+. {/**/}
 .btn-outline-primary {/**/}
 .btn-outline-secondary {/**/}
 .btn-outline-success {/**/}
@@ -99,6 +103,7 @@
 .btn-lg {/**/}
 .btn-sm {/**/}
 .disabled {/**/}
+.block {/**/}
 .active {/**/}
 
 ## carousel.md
@@ -113,21 +118,21 @@
 .carousel-control-next-icon {/**/}
 .carousel-indicators {/**/}
 .carousel-caption {/**/}
+.md:block {/**/}
 .h5 {/**/}
 .carousel-fade {/**/}
 .carousel-dark {/**/}
 
 ## close-button.md
 .btn-close {/**/}
-.bg-dark {/**/}
+.align-center {/**/}
 .btn-close-white {/**/}
 
 ## collapse.md
 .btn {/**/}
 .btn-primary {/**/}
 .collapse {/**/}
-.grid {/**/}
-.grid-cols-2 {/**/}
+.border {/**/}
 .multi-collapse {/**/}
 
 ## dropdowns.md
@@ -137,6 +142,7 @@
 .dropdown-toggle {/**/}
 .dropdown-menu {/**/}
 .dropdown-item {/**/}
+. {/**/}
 .btn-group {/**/}
 .btn-primary {/**/}
 .dropdown-divider {/**/}
@@ -151,11 +157,14 @@
 .active {/**/}
 .dropup {/**/}
 .dropend {/**/}
+.justify-end {/**/}
 .dropstart {/**/}
+.border {/**/}
 .dropdown-item-text {/**/}
 .disabled {/**/}
 
 ## modal.md
+.max-w-md {/**/}
 .modal-content {/**/}
 .modal-header {/**/}
 .modal-title {/**/}
@@ -168,6 +177,7 @@
 .modal {/**/}
 .modal-dialog {/**/}
 .fade {/**/}
+.block {/**/}
 .h1 {/**/}
 .modal-dialog-scrollable {/**/}
 .modal-dialog-centered {/**/}
@@ -177,7 +187,7 @@
 .nav-item {/**/}
 .nav-link {/**/}
 .disabled {/**/}
-.flex-col {/**/}
+. {/**/}
 .nav-tabs {/**/}
 .active {/**/}
 .nav-pills {/**/}
@@ -197,7 +207,7 @@
 .navbar {/**/}
 .navbar-expand-lg {/**/}
 .navbar-light {/**/}
-.bg-light {/**/}
+.justify-between {/**/}
 .navbar-brand {/**/}
 .navbar-toggler {/**/}
 .navbar-toggler-icon {/**/}
@@ -207,18 +217,16 @@
 .navbar-nav {/**/}
 .nav-link {/**/}
 .active {/**/}
+.relative {/**/}
 .dropdown-toggle {/**/}
 .dropdown-menu {/**/}
 .dropdown-item {/**/}
 .dropdown-divider {/**/}
 .disabled {/**/}
-.mr-2 {/**/}
 .form-control {/**/}
 .btn {/**/}
 .btn-outline-success {/**/}
 .navbar-dark {/**/}
-.bg-dark {/**/}
-.bg-primary {/**/}
 .btn-outline-light {/**/}
 .navbar-nav-scroll {/**/}
 
@@ -230,7 +238,6 @@
 .offcanvas-header {/**/}
 .offcanvas-title {/**/}
 .btn-close {/**/}
-.text-reset {/**/}
 .offcanvas-body {/**/}
 .dropdown {/**/}
 .btn-secondary {/**/}
@@ -245,35 +252,21 @@
 ## pagination.md
 .pagination {/**/}
 .page-item {/**/}
-.page-link {/**/}
 .disabled {/**/}
+.page-link {/**/}
 .active {/**/}
 .pagination-lg {/**/}
 .pagination-sm {/**/}
 
-## popovers.md
-.btn {/**/}
-.btn-lg {/**/}
-.btn-danger {/**/}
-.btn-secondary {/**/}
-.inline-block {/**/}
-.btn-primary {/**/}
-
 ## progress.md
 .progress {/**/}
 .progress-bar {/**/}
-.bg-success {/**/}
-.bg-info {/**/}
-.bg-warning {/**/}
-.bg-danger {/**/}
 .progress-bar-striped {/**/}
 .progress-bar-animated {/**/}
 
 ## scrollspy.md
-.px-3 {/**/}
 .navbar {/**/}
 .navbar-light {/**/}
-.bg-light {/**/}
 .navbar-brand {/**/}
 .nav {/**/}
 .nav-pills {/**/}
@@ -284,23 +277,14 @@
 .dropdown-menu {/**/}
 .dropdown-item {/**/}
 .dropdown-divider {/**/}
-.h-48 {/**/}
+.relative {/**/}
 .overflow-y-scroll {/**/}
 .h4 {/**/}
 .p {/**/}
 
 ## spinners.md
 .spinner-border {/**/}
-.text-primary {/**/}
-.text-secondary {/**/}
-.text-success {/**/}
-.text-danger {/**/}
-.text-warning {/**/}
-.text-info {/**/}
-.text-light {/**/}
-.text-dark {/**/}
 .spinner-grow {/**/}
-.spinner-border-sm {/**/}
 .spinner-grow-sm {/**/}
 .btn {/**/}
 .btn-primary {/**/}
@@ -309,9 +293,9 @@
 .toast {/**/}
 .fade {/**/}
 .show {/**/}
+.justify-between {/**/}
 .toast-header {/**/}
 .align-middle {/**/}
-.mr-2 {/**/}
 .rounded {/**/}
 .bd-placeholder-img {/**/}
 .mr-auto {/**/}
@@ -326,31 +310,24 @@
 .me-2 {/**/}
 .me-auto {/**/}
 .toast-container {/**/}
-.bg-light {/**/}
-.border-top {/**/}
+.m-auto {/**/}
 .btn-sm {/**/}
 .btn-secondary {/**/}
-.text-white {/**/}
 .border-0 {/**/}
-.bg-primary {/**/}
 .btn-close-white {/**/}
 .form-select {/**/}
-.bg-dark {/**/}
-.bd-example-toasts {/**/}
+.relative {/**/}
 .position-absolute {/**/}
-.text-muted {/**/}
-.w-96 {/**/}
 
 ## tooltips.md
 .tooltip-demo {/**/}
 .muted {/**/}
 .a {/**/}
-.bd-example-tooltips {/**/}
 .btn {/**/}
 .btn-secondary {/**/}
 .inline-block {/**/}
 
-# /home/matiaszapata/git/tailboots/docs/content/en/forms/
+# /home/matiaszapata/git/bootwindscss/docs/content/en/forms/
 
 ## checks-radios.md
 .form-check {/**/}
@@ -378,10 +355,7 @@
 .form-control {/**/}
 .form-control-lg {/**/}
 .form-control-sm {/**/}
-.grid {/**/}
-.grid-cols-4 {/**/}
 .col-form-label {/**/}
-.col-span-3 {/**/}
 .form-control-plaintext {/**/}
 .form-control-color {/**/}
 
@@ -390,7 +364,6 @@
 .input-group-text {/**/}
 .form-control {/**/}
 .form-label {/**/}
-.flex-nowrap {/**/}
 .input-group-sm {/**/}
 .input-group-lg {/**/}
 .form-check-input {/**/}
@@ -442,7 +415,7 @@
 .form-check-label {/**/}
 .form-select {/**/}
 
-# /home/matiaszapata/git/tailboots/docs/content/en/content/
+# /home/matiaszapata/git/bootwindscss/docs/content/en/content/
 
 ## tables.md
 .table {/**/}
@@ -469,9 +442,7 @@
 .h4 {/**/}
 .h5 {/**/}
 .h6 {/**/}
-.pb-3 {/**/}
 .display-1 {/**/}
-.border-bottom {/**/}
 .display-2 {/**/}
 .display-3 {/**/}
 .display-4 {/**/}
@@ -481,8 +452,6 @@
 .initialism {/**/}
 .blockquote {/**/}
 .blockquote-footer {/**/}
-.text-center {/**/}
-.text-right {/**/}
 .list-unstyled {/**/}
 .list-inline {/**/}
 .list-inline-item {/**/}
