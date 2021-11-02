@@ -59,4 +59,4 @@ Also, to sync up the color pallet, use the preset `tw.preset.js` in your `tailwi
 
 ## Final notes
 
-Documentation on the way. Meanwhile you can take a look at the github repo docs folder. 
+Documentation on the way. Meanwhile you can take a look at the github repo [docs folder](https://github.com/matzapata/bootwindscss/tree/main/docs/content/en). 
