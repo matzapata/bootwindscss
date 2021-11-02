@@ -1,9 +1,13 @@
 {
-  "name": "Bootwindscss",
-  "version": "1.0.1",
+  "name": "bootwindscss",
+  "version": "1.0.2",
   "description": "Bootstrap components with tailwind utilities made possible",
   "directories": {
     "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matzapata/bootwindscss.git"
   },
   "scripts": {
     "dev": "npm run dev:watch:scss & npm run dev:watch:tw & npm run dev:serve",
