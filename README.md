@@ -1,5 +1,5 @@
 
-<img src="/preview.png" width="1280" height="640" alt=""/>
+<!-- <img src="/preview.png" width="1280" height="640" alt=""/> -->
 
 ## Overview
 
@@ -15,7 +15,7 @@ Add `bootwindscss` and `tailwindcss` dependencies to your project:
 
 ```sh
 npm install bootwindscss
-npm install bootwindscss
+npm install tailwindcss
 ```
 
 Then import the neccesary files in your main css file. Remember, tailwindcss must come after bootwindcss so that you can use it's utilities to override defaults.
@@ -59,4 +59,4 @@ Also, to sync up the color pallet, use the preset `tw.preset.js` in your `tailwi
 
 ## Final notes
 
-Documentation on the building. Meanwhile you can take a look at the github repo docs folder. 
+Documentation on the way. Meanwhile you can take a look at the github repo [docs folder](https://github.com/matzapata/bootwindscss/tree/main/docs/content/en). 
