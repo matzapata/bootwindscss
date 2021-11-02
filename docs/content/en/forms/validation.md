@@ -8,13 +8,14 @@ category: Forms
 ## Available variables
 
 ```css
-.is-valid { /* Manually set the validation state. Does not require .was-validated parent class. */ }
-.is-invalid { /* Manually set the validation state. Does not require .was-validated parent class. */ }
-.was-validated { /* Validates on client before submit */ }
-.needs-validation { /* Validates on client after submit */ }
-.has-validation { /* For inputs groups that use is-{valid|invalid} classes */ }
-.{ valid|invalid }-feedback { /* Feedback text */ }
-.{ valid|invalid }-tooltip { /* Display validation feedback in a styled tooltip. */ }
+.has-validation {/**/}
+.was-validated {/**/}
+.invalid-feedback {/**/}
+.needs-validation {/**/}
+.is-valid {/**/}
+.is-invalid {/**/}
+.{ valid|invalid }-feedback {/**/}
+.{ valid|invalid }-tooltip {/**/}
 ```
 
 ## How it works
@@ -143,9 +144,9 @@ Optionally you can use `is-valid` or `is-invalid` in the input field to set the 
 
 Validation styles are available for the following form controls and components:
 
-`<input>`s and `<textarea>`s with .form-control (including up to one .form-control in input groups)
-`<select>`s with `.form-select`
-`.form-checks`
+* `<input>`s and `<textarea>`s with `.form-control` (including up to one `.form-control` in input groups)
+* `<select>`s with `.form-select`
+* `.form-checks`
 
 <div class="bd-example">
   <form class="was-validated">

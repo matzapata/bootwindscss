@@ -8,35 +8,36 @@ category: Forms
 ## Available classes
 
 ```css
-.form-control { /* General form control */ }
-.form-control-sm { /* Small variant */ }
-.form-control-lg { /* Large variant */ }
-.form-control-plaintext { /* Make input look like regular text. Mostly used in readonly inputs  */ }
-.form-control-color { /* Color picker component */ }
-.textarea { /* Text area component */ }
+.form-label {/**/}
+.form-control {/**/}
+.form-control-lg {/**/}
+.form-control-sm {/**/}
+.form-control-plaintext {/**/}
+.form-control-color {/**/}
+.col-form-label {/**/}
 ```
 
 ## Example
 
 Use `form-control` in combination with `type` to style input elements and `form-label` to style the corresponding labels
 
-<div class="bd-example">
-  <div class="mb-3">
+<div class="space-y-3 bd-example">
+  <div>
     <label for="exampleFormControlInput1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
-  <div class="mb-3">
+  <div>
     <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 </div>
 
 ```html
-<div class="mb-3">
+<div>
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
 </div>
-<div class="mb-3">
+<div>
   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
@@ -89,46 +90,38 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 
 ## Readonly plain text
 
-If you want to have `<input readonly>` elements in your form styled as plain text, use the `form-control-plaintext` class to remove the default form field styling and preserve the correct margin and padding. In this example we also make use of the tailwind grid sistem, take notice on the use of `col-form-label`.
+If you want to have `<input readonly>` elements in your form styled as plain text, use the `form-control-plaintext` class to remove the default form field styling and preserve the correct margin and padding. Note how we use the `.col-form-label` class to center the label vertically.
 
 <div class="bd-example">
-  <div class="grid grid-cols-4 mb-3">
-    <label for="staticEmail" class="col-form-label">Email</label>
-    <input type="text" readonly class="col-span-3 form-control-plaintext" id="staticEmail" value="email@example.com">
-  </div>
-  <div class="grid grid-cols-4 mb-3">
-    <label class="col-form-label" for="inputPassword">Password</label>
-    <input type="password" class="col-span-3 form-control" id="inputPassword">
-  </div>
+<div class="flex">
+  <label for="staticEmail" class="mr-6 col-form-label">Email</label>
+  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+</div>
 </div>
 
 ```html
-<div class="grid grid-cols-4 mb-3">
-  <label for="staticEmail" class="col-form-label">Email</label>
-  <input type="text" readonly class="col-span-3 form-control-plaintext" id="staticEmail" value="email@example.com">
-</div>
-<div class="grid grid-cols-4 mb-3">
-  <label class="col-form-label" for="inputPassword">Password</label>
-  <input type="password" class="col-span-3 form-control" id="inputPassword">
+<div class="flex">
+  <label for="staticEmail" class="mr-6 col-form-label">Email</label>
+  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
 </div>
 ```
 
 ## File input
 
-<div class="bd-example">
-  <div class="mb-3">
+<div class="space-y-3 bd-example">
+  <div>
     <label for="formFile" class="form-label">Default file input example</label>
     <input class="form-control" type="file" id="formFile">
   </div>
-  <div class="mb-3">
+  <div>
     <label for="formFileMultiple" class="form-label">Multiple files input example</label>
     <input class="form-control" type="file" id="formFileMultiple" multiple>
   </div>
-  <div class="mb-3">
+  <div>
     <label for="formFileDisabled" class="form-label">Disabled file input example</label>
     <input class="form-control" type="file" id="formFileDisabled" disabled>
   </div>
-  <div class="mb-3">
+  <div>
     <label for="formFileSm" class="form-label">Small file input example</label>
     <input class="form-control form-control-sm" id="formFileSm" type="file">
   </div>
@@ -139,19 +132,19 @@ If you want to have `<input readonly>` elements in your form styled as plain tex
 </div>
 
 ```html
-<div class="mb-3">
+<div>
   <label for="formFile" class="form-label">Default file input example</label>
   <input class="form-control" type="file" id="formFile" />
 </div>
-<div class="mb-3">
+<div>
   <label for="formFileMultiple" class="form-label">Multiple files input example</label>
   <input class="form-control" type="file" id="formFileMultiple" multiple />
 </div>
-<div class="mb-3">
+<div>
   <label for="formFileDisabled" class="form-label">Disabled file input example</label>
   <input class="form-control" type="file" id="formFileDisabled" disabled />
 </div>
-<div class="mb-3">
+<div>
   <label for="formFileSm" class="form-label">Small file input example</label>
   <input class="form-control form-control-sm" id="formFileSm" type="file" />
 </div>

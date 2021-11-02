@@ -8,9 +8,9 @@ category: Forms
 ## Available classes
 
 ```css
-.form-select { /* Basic component class */ }
-.form-select-sm { /* Small variant */ }
-.form-select-lg { /* Large variant */ }
+.form-select {/**/}
+.form-select-sm {/**/}
+.form-select-lg {/**/}
 ```
 
 ## Basic example
