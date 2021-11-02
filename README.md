@@ -15,7 +15,7 @@ Add `bootwindscss` and `tailwindcss` dependencies to your project:
 
 ```sh
 npm install bootwindscss
-npm install bootwindscss
+npm install tailwindcss
 ```
 
 Then import the neccesary files in your main css file. Remember, tailwindcss must come after bootwindcss so that you can use it's utilities to override defaults.
