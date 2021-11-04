@@ -1,6 +1,6 @@
 {
   "name": "bootwindscss",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Bootstrap components with tailwind utilities made possible",
   "directories": {
     "doc": "docs"
