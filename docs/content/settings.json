@@ -1,9 +1,9 @@
 {
-  "title": "Nuxt Content",
+  "title": "Bootwindscss",
   "url": "",
   "logo": {
     "light": "/logo-light.svg",
-    "dark": "/logo-dark.svg"
+    "dark": "/logo-light.svg"
   },
   "github": "nuxt/content",
   "twitter": "@nuxt_js"

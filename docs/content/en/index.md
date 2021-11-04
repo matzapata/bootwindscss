@@ -9,8 +9,31 @@ features:
   - Feature 3
 ---
 
-<img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
+<div class="preview-container">
+  <img src="./logo.svg" class="logo" alt="">
+  <p class="description">Bootstrap components with Tailwindcss utilities made posible</p>
+</div>
+<style>
+  .description {
+    color: #003e27;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+  }
+  .preview-container {
+    padding: 60px;
+  }
+  .preview-container .logo {
+    width: 100%;
+    max-height: 80px;
+  }
+  .preview-container p {
+    width: 100%;
+    max-width: 495px;
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>
 
 [Module]() for [NuxtJS](https://nuxtjs.org).
 
