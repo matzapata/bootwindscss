@@ -28,7 +28,7 @@ Here’s what you need to know before getting started with the navbar:
 
 * Navbars require a wrapping `.navbar` with `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` for responsive collapsing and color scheme classes. Don't worry, the breakpoints are shared with tailwind through the preset. Otherwise change them with the sass variables.
 * Use tailwindcss spacing and flex utility classes for controlling spacing and alignment within navbars.
-* Make navbars responsive [collapse]()
+* Make navbars responsive [collapse](/components/collapse)
 
 ## Supported content
 
@@ -43,8 +43,8 @@ Navbars come with built-in support for a handful of sub-components. Choose from 
 
 Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) breakpoint.
 
-<div class="bd-example">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="space-y-3 bd-example">
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
   <div class="flex flex-wrap items-center justify-between p-2">
     <a class="navbar-brand" href="" onclick="return false">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,6 @@ Here’s an example of all the sub-components included in a responsive light-the
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <nav class="mr-auto navbar-nav">
-          <a class="nav-link active" aria-current="page" href="" onclick="return false">Home</a>
           <a class="nav-link" href="" onclick="return false">Features</a>
           <a class="nav-link" href="" onclick="return false">Pricing</a>
           <div class="relative">
@@ -68,9 +67,23 @@ Here’s an example of all the sub-components included in a responsive light-the
           </div>
           <a class="nav-link disabled" href="" onclick="return false" tabindex="-1" aria-disabled="true">Disabled</a>
       </nav>
-      <form class="flex my-1">
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+  <div class="flex flex-wrap items-center justify-between p-2">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLight"
+      aria-controls="navbarNavLight" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavLight">
+      <nav class="my-2 mr-auto navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <a class="nav-link" href="#">Features</a>
+      </nav>
+      <form class="flex my-2">
         <input class="mr-2 form-control" type="search" placeholder="Search" aria-label="Search">
-        <button onclick="return false" class="btn btn-outline-success" >Search</button>
+        <button class="btn btn-outline-success" >Search</button>
       </form>
     </div>
   </div>
@@ -78,7 +91,7 @@ Here’s an example of all the sub-components included in a responsive light-the
 </div>
 
 ```html
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
   <div class="flex flex-wrap items-center justify-between p-2">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -106,7 +119,22 @@ Here’s an example of all the sub-components included in a responsive light-the
         </div>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </nav>
-      <form class="flex my-1">
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+  <div class="flex flex-wrap items-center justify-between p-2">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLight"
+      aria-controls="navbarNavLight" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavLight">
+      <nav class="my-2 mr-auto navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <a class="nav-link" href="#">Features</a>
+      </nav>
+      <form class="flex my-2">
         <input class="mr-2 form-control" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" >Search</button>
       </form>
@@ -120,7 +148,7 @@ Here’s an example of all the sub-components included in a responsive light-the
 Choose from `.navbar-light` for use with light background colors, or `.navbar-dark` for dark background colors. Then, customize with `.bg-*` utilities.
 
 <div class="space-y-2 bd-example">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
   <div class="flex flex-wrap items-center justify-between p-2">
     <a class="navbar-brand" href="" onclick="return false">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDark"
@@ -134,15 +162,11 @@ Choose from `.navbar-light` for use with light background colors, or `.navbar-da
         <a class="nav-link" href="" onclick="return false">Pricing</a>
         <a class="nav-link disabled" href="" onclick="return false" tabindex="-1" aria-disabled="true">Disabled</a>
       </nav>
-      <form class="flex my-1">
-        <input class="mr-2 form-control" type="search" placeholder="Search" aria-label="Search">
-        <button onclick="return false" class="btn btn-outline-success"  >Search</button>
-      </form>
     </div>
   </div>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-xl navbar-dark bg-primary">
   <div class="flex flex-wrap items-center justify-between p-2">
     <a class="navbar-brand" href="" onclick="return false">Navbar</a>
     <button onclick="return false" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavPrimary"
@@ -156,15 +180,11 @@ Choose from `.navbar-light` for use with light background colors, or `.navbar-da
         <a class="nav-link" href="" onclick="return false">Pricing</a>
         <a class="nav-link disabled" href="" onclick="return false" tabindex="-1" aria-disabled="true">Disabled</a>
       </nav>
-      <form class="flex my-1">
-        <input class="mr-2 form-control" type="search" placeholder="Search" aria-label="Search">
-        <button onclick="return false" class="btn btn-outline-light" >Search</button>
-      </form>
     </div>
   </div>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
   <div class="flex flex-wrap items-center justify-between p-2">
     <a class="navbar-brand" href="" onclick="return false">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLight"
@@ -178,10 +198,6 @@ Choose from `.navbar-light` for use with light background colors, or `.navbar-da
         <a class="nav-link" href="" onclick="return false">Pricing</a>
         <a class="nav-link disabled" href="" onclick="return false" tabindex="-1" aria-disabled="true">Disabled</a>
       </nav>
-      <form class="flex my-1">
-        <input class="mr-2 form-control" type="search" placeholder="Search" aria-label="Search">
-        <button onclick="return false" class="btn btn-outline-success" >Search</button>
-      </form>
     </div>
   </div>
 </nav>
@@ -210,7 +226,7 @@ Please note that this behavior comes with a potential drawback of overflow—whe
 Here’s an example navbar using `.navbar-nav-scroll` with `style="--bs-scroll-height: 100px;"`, with some extra margin utilities for optimum spacing.
 
 <div class="bd-example">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
   <div class="flex flex-wrap items-center justify-between p-2">
     <a class="navbar-brand" href="" onclick="return false">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLight"
@@ -224,17 +240,13 @@ Here’s an example navbar using `.navbar-nav-scroll` with `style="--bs-scroll-h
         <a class="nav-link" href="" onclick="return false">Pricing</a>
         <a class="nav-link disabled" href="" onclick="return false" tabindex="-1" aria-disabled="true">Disabled</a>
       </nav>
-      <form class="flex my-2">
-        <input class="mr-2 form-control" type="search" placeholder="Search" aria-label="Search">
-        <button onclick="return false" class="btn btn-outline-success" >Search</button>
-      </form>
     </div>
   </div>
 </nav>
 </div>
 
 ```html
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
   <div class="flex flex-wrap items-center justify-between p-2">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLight"
@@ -248,10 +260,6 @@ Here’s an example navbar using `.navbar-nav-scroll` with `style="--bs-scroll-h
         <a class="nav-link" href="#">Pricing</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </nav>
-      <form class="flex my-2">
-        <input class="mr-2 form-control" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" >Search</button>
-      </form>
     </div>
   </div>
 </nav>
