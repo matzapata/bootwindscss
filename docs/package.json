@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "start": "nuxt start",
-    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/content-theme-docs": "file:Dependencies/theme-docs",
