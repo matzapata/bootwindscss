@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "postinstall": "(cd Dependencies/theme-docs && npm install)"
   },
   "dependencies": {
     "@nuxt/content-theme-docs": "file:Dependencies/theme-docs",
