@@ -1,17 +1,13 @@
 ---
-title: Introduction
+title: Overview
 description: ""
 position: 1
 category: ""
-features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
 ---
 
 <div class="preview-container">
-  <img src="./logo.svg" class="logo" alt="">
-  <p class="description">Bootstrap components with Tailwindcss utilities made posible</p>
+  <img src="/logo-light.svg" class="logo" alt="">
+  <p class="description">Bootstrap components with Tailwind utilities made posible</p>
 </div>
 <style>
   .description {
@@ -21,11 +17,12 @@ features:
     font-family: sans-serif;
   }
   .preview-container {
-    padding: 60px;
+    padding: 60px 80px;
   }
   .preview-container .logo {
     width: 100%;
     max-height: 80px;
+    margin-bottom: 10px;
   }
   .preview-container p {
     width: 100%;
@@ -35,11 +32,55 @@ features:
   }
 </style>
 
-[Module]() for [NuxtJS](https://nuxtjs.org).
+## Overview
 
+Bootwindscss is a framework that surges from forking bootstrap and cleaning, adapting it to properly work with tailwindcss utilities and principles.
 
-## Features
+The main porpoise of it is to combine the best of both worlds, the easiness of pulling pre-made components from bootstrap library and the freedom to quickly customize them and style your hole website from your html.
 
-<list :items="features"></list>
+For a better development experience we pull the docs from bootstrap and make the proper cleanup and adaptation of the examples so that you can copy and refactor as needed.
 
-<p class="flex items-center">Enjoy light and dark mode:&nbsp;<app-color-switcher class="inline-flex ml-2"></app-color-switcher></p>
+## Installation
+
+Add `bootwindscss` and `tailwindcss` dependencies to your project:
+
+```bash
+npm install bootwindscss
+npm install tailwindcss
+```
+
+Then import the necessary files in your main css file. Remember, tailwindcss must come after bootwindcss so that you can use it's utilities to override defaults.
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    @import "bootwindscss/dist/css/all.css";
+}
+```
+
+Or you might as well import just what's needed
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    @import "bootwindscss/scss/functions";
+    @import "bootwindscss/scss/variables";
+    @import "bootwindscss/scss/mixins";
+    @import "bootwindscss/scss/root";
+    /* Your imports goes here */
+    @import "bootwindscss/scss/buttons.scss";
+}
+```
+
+<!-- ## Whats included -->
+
+<!-- ## Customization -->
+
+<!-- ## Comming from bootstrap -->
+
+<!-- ## Comming from tailwindcss -->

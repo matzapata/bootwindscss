@@ -593,13 +593,9 @@ Add `.table-sm` to make any `.table` more compact by cutting all cell padding in
 </table>
 ```
 
-## Vertical alignment (REFACTOR)
+<!-- ## Vertical alignment (REFACTOR) -->
+
+<!-- ## Anatomy
+### Table head -->
 
 <!-- TODO - Refactor for tw utilities classes -->
-
-
-## Anatomy
-### Table head
-
-<!-- TODO - Completarrrrr -->
-

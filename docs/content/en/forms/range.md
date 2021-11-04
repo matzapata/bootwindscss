@@ -8,7 +8,7 @@ category: Forms
 ## Available classes
 
 ```css
-.form-range { /* Base class applied on input  */ }
+.form-range {/**/}
 ```
 
 ## Examples
@@ -64,12 +64,5 @@ Set a custom step with `step=""`
 
 ```html
 <label for="customRange3" class="form-label">Example range</label>
-<input
-  type="range"
-  class="form-range"
-  min="0"
-  max="5"
-  step="0.5"
-  id="customRange3"
-/>
+<input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
 ```

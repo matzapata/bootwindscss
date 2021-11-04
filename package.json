@@ -1,9 +1,13 @@
 {
   "name": "bootwindscss",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Bootstrap components with tailwind utilities made possible",
   "directories": {
     "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matzapata/bootwindscss.git"
   },
   "scripts": {
     "dev": "npm run dev:watch:scss & npm run dev:watch:tw & npm run dev:serve",
@@ -31,10 +35,9 @@
     "framework",
     "web"
   ],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-  },
+  "author": "Matias Zapata",
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "ejs": "^3.1.6",
     "sass": "^1.42.1",
@@ -44,6 +47,5 @@
     "express": "^4.17.1",
     "gray-matter": "^4.0.3",
     "markdown-it": "^12.2.0"
-
   }
 }

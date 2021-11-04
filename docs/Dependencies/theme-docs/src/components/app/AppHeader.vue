@@ -1,15 +1,15 @@
 <template>
   <nav
-    class="fixed top-0 z-40 w-full border-b dark:border-gray-800 bg-white dark:bg-gray-900"
+    class="fixed top-0 z-40 w-full bg-white border-b dark:border-gray-800 dark:bg-gray-900"
     :class="{ 'shadow border-transparent': scrolled }"
     @click="scrollToTop"
   >
-    <div class="container mx-auto flex-1 px-4 lg:px-8">
+    <div class="container flex-1 px-4 mx-auto lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <div class="lg:w-1/5 flex items-center pr-4" @click.stop="noop">
+        <div class="flex items-center pr-4 lg:w-1/5" @click.stop="noop">
           <NuxtLink
             :to="localePath('/')"
-            class="flex-shrink-0 flex-1 font-bold text-xl"
+            class="flex-1 flex-shrink-0 text-xl font-bold"
             :aria-label="`${settings.title} Logo`"
           >
             <span v-if="!logo">{{ settings.title }}</span>
@@ -23,18 +23,18 @@
             <img v-if="logo" :src="logo.dark" class="h-8 max-w-full dark-img" :alt="settings.title" />
           </NuxtLink>
         </div>
-        <div v-if="settings.layout !== 'single'" class="flex-1 flex justify-start w-4/6">
+        <div v-if="settings.layout !== 'single'" class="flex justify-start flex-1 w-4/6">
           <AppSearchAlgolia v-if="settings.algolia" :options="settings.algolia" :settings="settings" />
           <AppSearch v-else class="hidden lg:block" />
         </div>
         <div
-          class="lg:w-1/5 flex items-center pl-4 lg:pl-8"
+          class="flex items-center pl-4 lg:w-1/5 lg:pl-8"
           :class="{ 'justify-between': lastRelease && settings.layout !== 'single', 'justify-end': !lastRelease || settings.layout === 'single' }"
         >
           <NuxtLink
             v-if="lastRelease"
             :to="localePath('/releases')"
-            class="font-semibold leading-none text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500 text-base mr-4"
+            class="mr-4 text-base font-semibold leading-none text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500"
             exact-active-class="text-primary-500"
           >{{ lastRelease.name }}</NuxtLink>
           <div class="flex items-center">
@@ -45,7 +45,7 @@
               rel="noopener noreferrer"
               title="Twitter"
               name="Twitter"
-              class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500 ml-4"
+              class="ml-4 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500"
               :class="{
                 'hidden lg:block': settings.layout !== 'single'
               }"
@@ -59,7 +59,7 @@
               rel="noopener noreferrer"
               title="Github"
               name="Github"
-              class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500 ml-4"
+              class="ml-4 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500"
               :class="{
                 'hidden lg:block': settings.layout !== 'single'
               }"
@@ -69,7 +69,7 @@
 
             <button
               v-if="settings.layout !== 'single'"
-              class="lg:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 focus:outline-none -mr-2"
+              class="p-2 -mr-2 text-gray-700 rounded-md lg:hidden dark:text-gray-300 focus:outline-none"
               aria-label="Menu"
               @click.stop="menu = !menu"
             >

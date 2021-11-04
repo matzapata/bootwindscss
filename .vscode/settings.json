@@ -2,5 +2,8 @@
   "markdown.styles": [
     // "./dist/css/tailboots.css",
     // "./dist/css/markdown.css",
+  ],
+  "cSpell.words": [
+    "neccesary"
   ]
 }
