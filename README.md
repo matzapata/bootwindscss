@@ -1,6 +1,4 @@
 
-<!-- <img src="/preview.png" width="1280" height="640" alt=""/> -->
-
 ## Overview
 
 Bootwindscss is a framework that surges from forking bootstrap and cleaning, adapting it to properly work with tailwindcss utilities and principles.
@@ -13,12 +11,12 @@ For a better development experience we pull the docs from bootstrap and make the
 
 Add `bootwindscss` and `tailwindcss` dependencies to your project:
 
-```sh
+```bash
 npm install bootwindscss
 npm install tailwindcss
 ```
 
-Then import the neccesary files in your main css file. Remember, tailwindcss must come after bootwindcss so that you can use it's utilities to override defaults.
+Then import the necessary files in your main css file. Remember, tailwindcss must come after bootwindcss so that you can use it's utilities to override defaults.
 
 ```css
 @tailwind base;
@@ -31,7 +29,6 @@ Then import the neccesary files in your main css file. Remember, tailwindcss mus
 ```
 
 Or you might as well import just what's needed
-
 ```css
 @tailwind base;
 @tailwind components;
@@ -42,7 +39,7 @@ Or you might as well import just what's needed
     @import "bootwindscss/scss/variables";
     @import "bootwindscss/scss/mixins";
     @import "bootwindscss/scss/root";
-    // Your imports goes here
+    /* Your imports goes here */
     @import "bootwindscss/scss/buttons.scss";
 }
 ```
@@ -57,6 +54,10 @@ Also, to sync up the color pallet, use the preset `tw.preset.js` in your `tailwi
 
 <!-- ## Comming from tailwindcss -->
 
-## Final notes
+## Docs website
 
-Documentation on the way. Meanwhile you can take a look at the github repo [docs folder](https://github.com/matzapata/bootwindscss/tree/main/docs/content/en). 
+https://bootwindscss.netlify.app/
+
+## Git repo
+
+https://github.com/matzapata/bootwindscss

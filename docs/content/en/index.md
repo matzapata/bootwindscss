@@ -77,6 +77,8 @@ Or you might as well import just what's needed
 }
 ```
 
+Also, to sync up the color pallet, use the preset `tw.preset.js` in your `tailwind.config.js` file. 
+
 <!-- ## Whats included -->
 
 <!-- ## Customization -->
