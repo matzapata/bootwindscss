@@ -12,7 +12,8 @@
     "@nuxt/content-theme-docs": "file:Dependencies/theme-docs",
     "core-js": "^3.15.1",
     "date-fns": "^2.25.0",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "sass": "^1.43.4"
   },
   "devDependencies": {}
 }
